@@ -1,0 +1,1622 @@
+<html dir="rtl" xmlns:msxsl="urn:schemas-microsoft-com:xslt">	
+    <title></title>
+    <head>
+<script type="text/javascript" src="../../scripts/utils.js"></script>
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1255">
+    <STYLE>BODY {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: #173d65; BACKGROUND-COLOR: #feffff
+}
+.clsTable {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; BORDER-BOTTOM: #173d65 thin; COLOR: #173d65
+}
+.clsMessage {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: #173d65
+}
+.TblHeader {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: white; TEXT-ALIGN: center; BACKGROUND-COLOR: #173d65
+}
+TABLE {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+BUTTON {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: white; BACKGROUND-COLOR: #53769b
+}
+.clsSelectRowMenu {
+	CURSOR: hand; FONT-SIZE: 13px; BORDER-TOP: moccasin thin inset; BORDER-RIGHT: moccasin thin inset; BORDER-BOTTOM: moccasin thin inset; FONT-WEIGHT: bolder; COLOR: lightyellow; BORDER-LEFT: moccasin thin inset; BACKGROUND-COLOR: #4682b4
+}
+.TblDetail {
+	BACKGROUND-COLOR: antiquewhite
+}
+.clsHeader {
+	FONT-SIZE: 15px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: #173d65
+}
+.clsHeaders {
+	FONT-SIZE: 15px; TEXT-DECORATION: underline; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: #173d65
+}
+.clsTableDetails {
+	BACKGROUND-COLOR: #bdcedd
+}
+.clsBut {
+	FONT-SIZE: 13px; HEIGHT: 20px; FONT-FAMILY: Arial; WIDTH: 70px; FONT-WEIGHT: bolder; COLOR: white; BACKGROUND-COLOR: #53769b
+}
+.clsSelectedSearch {
+	FONT-WEIGHT: bolder; COLOR: #d4a302
+}
+.clsSelect {
+	FONT-SIZE: 13px; HEIGHT: 20px; WIDTH: 165px
+}
+.clsDisabledText {
+	WIDTH: 165px; BACKGROUND-COLOR: #bdcedd
+}
+.clsInputText {
+	FONT-SIZE: 13px; HEIGHT: 20px; WIDTH: 165px
+}
+.clsWinButton {
+	HEIGHT: 20px; WIDTH: 25px; FONT-WEIGHT: bolder; COLOR: white; BACKGROUND-COLOR: #53769b
+}
+.clsInputTextDate {
+	FONT-SIZE: 13px; HEIGHT: 20px; WIDTH: 77px
+}
+.clsTDTitle {
+	FONT-FAMILY: Arial; FONT-WEIGHT: bolder; BACKGROUND-COLOR: #bdcedd
+}
+.clsSmallSelect {
+	FONT-SIZE: 13px; HEIGHT: 20px; WIDTH: 100px
+}
+.clsSmallInputText {
+	FONT-SIZE: 13px; HEIGHT: 20px; WIDTH: 100px
+}
+.HeaderEntityName {
+	FONT-SIZE: 16px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: #173d65
+}
+.tblFormStatic {
+	FONT-SIZE: 13px; BORDER-TOP: #53769b thin solid; FONT-FAMILY: Arial; BORDER-RIGHT: #53769b thin solid; BORDER-BOTTOM: #53769b thin solid; BORDER-LEFT: #53769b thin solid
+}
+.TextareaDeploy {
+	BOX-SIZING: border-box; BORDER-TOP: medium none; FONT-FAMILY: Arial; BORDER-RIGHT: medium none; OVERFLOW-X: hidden; BORDER-BOTTOM: medium none; COLOR: #173d65; FONT-STYLE: italic; BORDER-LEFT: medium none; BACKGROUND-COLOR: white; resize: none
+}
+.clsTableBorder {
+	BORDER-TOP: #173d65 1px solid; BORDER-RIGHT: #173d65 1px solid; BORDER-BOTTOM: #173d65 1px solid; BORDER-LEFT: #173d65 1px solid
+}
+</STYLE>
+    <STYLE>BODY {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65; BACKGROUND-COLOR: #feffff
+}
+.clsSelectTab {
+	FONT-SIZE: 11px; BORDER-TOP: paleturquoise thin inset; FONT-FAMILY: Arial; BORDER-RIGHT: paleturquoise thin inset; BORDER-BOTTOM: paleturquoise thin inset; BORDER-LEFT: paleturquoise thin inset; BACKGROUND-COLOR: #00608b
+}
+.clsMenuTab {
+	FONT-SIZE: 11px; BORDER-TOP: paleturquoise thin; FONT-FAMILY: Arial; BORDER-RIGHT: paleturquoise thin; BORDER-BOTTOM: paleturquoise thin; COLOR: white; BORDER-LEFT: paleturquoise thin; BACKGROUND-COLOR: #00608b
+}
+.menulines {
+	FONT-SIZE: 12px; BORDER-TOP: midnightblue thin solid; FONT-FAMILY: Arial; BORDER-RIGHT: midnightblue thin solid; BORDER-BOTTOM: midnightblue thin solid; FONT-WEIGHT: bolder; COLOR: white; TEXT-ALIGN: right; BORDER-LEFT: midnightblue thin solid; BACKGROUND-COLOR: #0b4a80
+}
+.clsHeaders {
+	FONT-SIZE: 15px; TEXT-DECORATION: underline; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: #173d65
+}
+.clsButton {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: white; BACKGROUND-COLOR: #53769b
+}
+.TableFrmHeader {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: #173d65
+}
+.clsTable {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; BORDER-BOTTOM: #173d65 thin; COLOR: #173d65
+}
+.clsFrmFooter {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+.clsMessage {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: #173d65
+}
+.menutree {
+	CURSOR: hand; FONT-SIZE: 12px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: white; BACKGROUND-COLOR: #00608b
+}
+.TblHeader {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: white; TEXT-ALIGN: center; BACKGROUND-COLOR: #173d65
+}
+TABLE {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+.clsSelectedRow {
+	CURSOR: hand; BACKGROUND-COLOR: #fffacd
+}
+.clsFirstRow {
+	CURSOR: hand; BACKGROUND-COLOR: white
+}
+BUTTON {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: white; BACKGROUND-COLOR: #53769b
+}
+.clsExplenation {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65; FONT-STYLE: italic
+}
+.SubMenu {
+	CURSOR: hand; FONT-SIZE: 12px; BORDER-TOP: medium none; FONT-FAMILY: Arial; BORDER-RIGHT: medium none; BACKGROUND-REPEAT: no-repeat; BACKGROUND-ATTACHMENT: fixed; BORDER-BOTTOM: medium none; BACKGROUND-POSITION: center bottom; FONT-WEIGHT: lighter; COLOR: #173d65; BORDER-LEFT: medium none
+}
+.clsSelectRowMenu {
+	CURSOR: hand; FONT-SIZE: 13px; BORDER-TOP: ivory thin; BORDER-RIGHT: ivory thin; BORDER-BOTTOM: ivory thin; FONT-WEIGHT: lighter; COLOR: lemonchiffon; BORDER-LEFT: ivory thin
+}
+.HeaderEntityName {
+	FONT-SIZE: 16px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: #173d65
+}
+.SubHeader {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #2f5c8a
+}
+.clsRemark {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #e34b00; FONT-STYLE: italic
+}
+INPUT {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+TEXTAREA {
+	OVERFLOW: visible; FONT-SIZE: 13px; BORDER-TOP: #173d65 1px solid; FONT-FAMILY: Arial; BORDER-RIGHT: #173d65 1px solid; WIDTH: 145px; OVERFLOW-X: hidden; BORDER-BOTTOM: #173d65 1px solid; ZOOM: 1; COLOR: #173d65; BORDER-LEFT: #173d65 1px solid; BACKGROUND-COLOR: white
+}
+OPTION {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial
+}
+.clsUnderLine {
+	FONT-SIZE: 13px; TEXT-DECORATION: underline; FONT-FAMILY: Arial; FONT-WEIGHT: bold
+}
+.clsButFix {
+	FONT-SIZE: 13px; BORDER-TOP: cornflowerblue thin ridge; FONT-FAMILY: Arial; BORDER-RIGHT: cornflowerblue thin ridge; BORDER-BOTTOM: cornflowerblue thin ridge; FONT-WEIGHT: bolder; COLOR: snow; BORDER-LEFT: cornflowerblue thin ridge; BACKGROUND-COLOR: #53769b
+}
+.clsGray {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: gray
+}
+SELECT {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+.clsHeaderListReport {
+	FONT-WEIGHT: bolder; COLOR: white; BACKGROUND-COLOR: #00608b
+}
+.DivGrd1 {
+	OVERFLOW: auto
+}
+.clsSelectGif {
+	BACKGROUND-REPEAT: no-repeat; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-POSITION: right center
+}
+.clsSelectOnLoad {
+	FONT-SIZE: 9px; FONT-FAMILY: Arial; FONT-WEIGHT: lighter; BACKGROUND-COLOR: #53769b
+}
+.clsButtonShow {
+	BORDER-TOP: #00608b; BORDER-RIGHT: #00608b; BORDER-BOTTOM: #00608b; BORDER-LEFT: #00608b; BACKGROUND-COLOR: #53769b
+}
+.clsButtonHide {
+	BORDER-TOP: #00608b; BORDER-RIGHT: #00608b; BORDER-BOTTOM: #00608b; BORDER-LEFT: #00608b; BACKGROUND-COLOR: #53769b
+}
+.ButTop {
+	FONT-SIZE: 9px; BORDER-TOP: #173d65; FONT-FAMILY: Arial; BORDER-RIGHT: #173d65; BORDER-BOTTOM: #173d65; POSITION: relative; FONT-WEIGHT: bolder; COLOR: white; FONT-STYLE: normal; CLEAR: right; BORDER-LEFT: thin; VISIBILITY: visible; BACKGROUND-COLOR: #173d65
+}
+.overMenu {
+	BORDER-TOP: ivory thin solid; FONT-FAMILY: Arial; BORDER-RIGHT: ivory thin solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-ATTACHMENT: fixed; BORDER-BOTTOM: ivory thin solid; BACKGROUND-POSITION: right top; COLOR: palegoldenrod; BORDER-LEFT: ivory thin solid
+}
+.clsSelectOnLoad2 {
+	FONT-SIZE: 9px; FONT-FAMILY: Arial; FONT-WEIGHT: lighter
+}
+.tblFormStatic {
+	FONT-SIZE: 13px; BORDER-TOP: #53769b thin solid; FONT-FAMILY: Arial; BORDER-RIGHT: #53769b thin solid; BORDER-BOTTOM: #53769b thin solid; BORDER-LEFT: #53769b thin solid
+}
+PRE {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+.clsTableBorder {
+	BORDER-TOP: #173d65 1px solid; BORDER-RIGHT: #173d65 1px solid; BORDER-BOTTOM: #173d65 1px solid; BORDER-LEFT: #173d65 1px solid
+}
+.clsMarkFields {
+	BORDER-TOP: #e34b00 1px solid; BORDER-RIGHT: #e34b00 1px solid; BORDER-BOTTOM: #e34b00 1px solid; BORDER-LEFT: #e34b00 1px solid; BACKGROUND-COLOR: #ffb895
+}
+.clsNoneMarkFields {
+	
+}
+.clsPoint {
+	BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: #bdcedd 1px dotted; BORDER-LEFT: medium none
+}
+</STYLE>
+      <link rel="STYLESHEET" href="../StyleSheet/General.css">
+      <link rel="STYLESHEET" href="../StyleSheet/General_Deploy.css">      
+      
+    </head>
+    
+    <body oncontextmenu="return(false)" bgcolor="#FDFDF7">
+      
+      <table border="0" dir="rtl" align="right" style="width:100%" id="tblMain">		  
+        <tr>
+          <td>
+            
+	
+			<SCRIPT LANGUAGE=javascript>
+
+function isSmartPhone() {return ((navigator.userAgent.match(/iPhone/i)) ||(navigator.userAgent.match(/iPod/i)) ||
+(navigator.userAgent.match(/iPad/i)) ||
+(navigator.userAgent.match(/Android/i)));
+}function OpenFile(ProofNum, FileNameObj)
+{
+	var URL = new String(document.URLUnencoded);
+	var DomainName = 'mayafiles.tase.co.il/';
+	var IndexStart = URL.indexOf("/", 7);				
+	var IndexEnd = URL.indexOf("/", IndexStart + 1);
+	var Site = URL.substring(IndexStart + 1, IndexEnd).toLowerCase();
+	var Path = "";
+	
+  if (URL.match(/^file:\/\//i) != null) 
+      Site = "file:"; 
+  
+	Site= 'internet';
+switch (Site)
+	{
+		case "internet": 
+			Path = "http://" + DomainName + "/Pages/GetGWFile.aspx?ProofID=" + ProofNum + "&FileName=" + encodeURIComponent(document.all ? FileNameObj.innerText : FileNameObj.textContent);		
+			break;
+			
+		case "file:":
+			Path = FileNameObj.localPath;
+			break;
+
+		default:
+			var FileName = FileNameObj.value ? FileNameObj.value.replace(/^\s+/g, "").replace(/\s+$/g, "") : "";
+			Path = (FileName.length > 0) ? ("file://" + FileName) : "";
+			break;
+	}
+	
+	if(Path != "")
+		{
+if (isSmartPhone())
+ window.open(Path);
+ else  document.location.href=Path; 
+}
+}
+</script>
+	
+
+<div style="display:none">
+	
+			<span id="HeaderFormSubject" FieldAlias="FormSubject">_________</span>
+		
+
+  
+			<span id="HeaderIsComfort" FieldAlias="IsComfort">false</span>
+		
+</div>
+
+
+
+
+<table class="clsTable" dir="rtl" align="center" style="width:100%" border="0">
+		<tr>
+			<td style="width:23%"></td>	
+			<td style="display:none">
+			<span id="EntityTypeCode" FieldAlias="KodSugYeshut">1</span>
+			</td>
+			<td class="HeaderEntityName" align="center" style="width:54%">
+			<span id="HeaderEntityNameEB" FieldAlias="ShemYeshutIvrit">א. ליבנטל אחזקות בע"מ</span>
+			</td>
+			<td align="right" class="clsTable" style="width:23%">
+			<b>
+			<span id="HeaderFormNumber" FieldAlias="MisparTofes">ת460</span>
+			</b>				
+			</td>
+			
+		</tr>
+		<tr>
+			<td style="width:160px">
+				
+			</td>	
+			<td style="display:none"></td>
+			<td class="HeaderEntityName" align="center">
+			<span id="HeaderEntityNameEn" FieldAlias="ShemYeshutLoazit">A. LIBENTAL HOLDINGS LTD</span>
+			</td>
+			
+			<td align="right" class="clsTable">
+			<b>
+			<span id="HeaderPublic" FieldAlias="PumbiLoPumbi">פומבי</span>
+			</b>				
+			</td>
+			
+		</tr>
+    
+    <tr>
+      <td></td>
+      <td style="display:none"></td>
+			<td class="HeaderEntityName" align="center">
+				        
+        
+                
+			</td>
+      <td></td>
+    </tr>  
+    
+		<tr>
+			<td style="width:160px"></td>	
+			<td style="display:none">
+			<span id="HeaderEntityID" FieldAlias="MezahehHotem">7380</span>
+					
+			</td>
+				<td align="center">
+				
+					<span id="HeaderSingNumber" FieldAlias="">מספר ברשם: </span>
+					
+							
+					<span id="HeaderSingNumberD" FieldAlias="HeaderMisparBaRasham">520032947</span>
+				</td>
+				<td>				
+				</td>
+
+		</tr>
+			<tr>
+			<td></td>
+				
+			<td align="center">
+			<span id="HeaderText" FieldAlias="NeyarotErechReshumim">ניירות ערך של התאגיד רשומים למסחר בבורסה בתל-אביב</span>
+						<td></td>	
+			</td>
+			
+
+		</tr>
+		
+		<tr>
+			<td style="width:160px;"></td>	
+
+			<td style="display:none">
+			<span id="HeaderEntityIdentity" FieldAlias="MezahehYeshut">387</span>
+					
+			</td>
+											
+			<td align="center">
+			<span id="HeaderStockSing" FieldAlias="">שם מקוצר: </span>
+							
+			<span id="HeaderStockSingD" FieldAlias="HeaderSemelBursa">ליבנטל</span>
+						
+			</td>
+			<td>
+			</td>
+			
+
+			</tr>
+		<tr>
+			<td style="width:160px"></td>	
+
+			<td style="display:none"><span id="HeaderFormID" FieldAlias="MezahehTofes">551</span>
+			</td>
+
+			<td align="center">
+							<span id="HeaderAddress" FieldAlias="">רחוב: </span>
+							<span id="HeaderStreet" FieldAlias="HeaderRehov">היצירה</span>
+							
+			
+							<span id="HeaderHomeNumber" FieldAlias="HeaderMisparBait">3</span>
+							,	
+								
+							<span id="HeaderCity" FieldAlias="HeaderYeshuv">רמת-גן</span>
+								
+							
+							<span id="HeaderZipCode" FieldAlias="HeaderMikud">52521</span>
+												
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="width:160px"></td>	
+
+			<td align="center">
+							<span id="HeaderPhone" FieldAlias="HeaderPhone">טלפון: </span>
+														
+								
+							<span id="HeaderPhone1" FieldAlias="HeaderTelephone1">03-6129988</span>
+							, 
+							
+						<span id="HeaderPhone2" FieldAlias="HeaderTelephone2"></span>
+							
+												
+						,
+							
+							<span id="HeaderFax" FieldAlias="">פקס: </span>
+						
+				
+							<span id="HeaderFaxD" FieldAlias="HeaderFax1">03-5750780</span>
+										
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="width:160px"></td>	
+
+			<td align="center">
+							<span id="HeaderEmail" FieldAlias="">דואר אלקטרוני: </span>
+						
+								
+							<span id="HeaderEmailD" FieldAlias="HeaderDoarElectroniMedaveach">jonathan@lbt.co.il</span>
+			</td>
+			<td class="clsTable" align="right">
+				<span id="HeaderSendDate" FieldAlias="HeaderSendDate">שודר במגנא: </span>
+				01/01/2015	
+			</td>
+			</tr>
+			<tr>
+				<td style="width:160px"></td>	
+				<td></td>	
+
+			<td>			
+										
+					</td>
+			</tr>		
+		
+		<tr>
+		<td></td>
+		<td></td>
+			<td class="clsTable" align="right" style="display:none">
+						<span id="HeaderSendTime" FieldAlias="HeaderSendTime">שעת שידור: </span>
+					
+							13:38
+							<span id="HeaderSendTimeD" FieldAlias="ShaaShidur">13:37:21 </span>
+																
+			</td>
+			
+		</tr>
+		<tr>
+			<td style="width:160px"></td>
+			<td align="center">
+				<table class="clsTable" cellspacing="0" cellpadding="0">
+					<tr>
+						<td valign="top">
+						
+						</td>
+						<td width="5"></td>
+						<td valign="top" dir="ltr">
+						<span id="HeaderCompanyUrlD" FieldAlias="CompanyUrl"></span>
+						</td>
+					</tr>
+				</table>					
+			</td>
+			<td class="clsTable" align="right">
+						<span id="HeaderProof" FieldAlias="">אסמכתא: </span>
+							
+						<span id="HeaderProofValue">2015-01-001027</span>
+			
+				</td>
+			</tr>											
+			<tr>
+			<td></td>
+			<td></td>
+
+				<td>											
+					
+
+			</td>
+			
+		</tr>
+		</table>
+		<table dir="rtl" class="TableFrmHeader" style="width:60%">
+		<tr>			
+			<td>
+							<span id="HeaderFor" FieldAlias="">לכבוד </span>
+															
+			</td>
+			<td></td>
+			
+						
+			<td style="width:10">
+							<span id="HeaderFor2" FieldAlias="">לכבוד </span>
+															
+
+			</td>
+			
+				
+			<td>
+			&nbsp</td>
+			
+			
+			
+
+			<td></td>
+
+			<td></td>			
+		</tr>
+		<tr>
+					<td><u>
+							<span id="HeaderRashot" FieldAlias="">רשות ניירות ערך </span>
+							</u>
+								
+
+			</td>
+			<td></td>
+			
+			
+			<td><u>
+							<span id="HeaderToTheStock" FieldAlias="">הבורסה לניירות ערך בת"א בע"מ </span>
+							</u>
+							
+			</td>
+			
+				
+			<td>
+			&nbsp</td>
+			
+			
+
+			<td></td>
+
+			<td>
+							
+			</td>
+		</tr>
+		<tr>
+			<td>							
+			<span id="HeaderRashotMail" FieldAlias="DoarElectroniRashut">www.isa.gov.il </span>
+								
+
+			</td>
+			<td></td>
+			
+			
+			
+
+			<td style="width:10">
+							<span id="HeaderStockEmail" FieldAlias="DoarElectroniBursa">www.tase.co.il </span>
+						
+			</td>
+			
+				
+			<td>
+			&nbsp</td>
+			
+			
+
+			<td>
+							<input type="text" id="HeaderID" value="2" style="display:none"/></td>
+			<td>
+							<input type="text" id="IsFixReport"  style="display:none"/></td>
+			
+			<td>
+							<input type="text" id="IsComplementaryReport"  style="display:none"/></td>
+				
+
+		</tr>
+		</table>
+		
+		
+
+
+		
+
+
+
+		
+
+
+								<HideDataFromEscortFile>
+
+
+
+    
+
+          </td>
+        </tr>
+        <tr>
+          <td style="Height:30"></td>
+        </tr>
+        <tr>
+          <td align="center" class="clsHeaders">
+            <span id="Field1" FieldAlias="Hanadon">דוח מיידי על כינוס/ דחייה/ ביטול אסיפה </span>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" class="SubHeader">
+            <span id="Field2" FieldAlias="">תקנה 36ב (א) ו-(ד), ותקנה 36ג לתקנות ניירות ערך (דוחות תקופתיים ומיידיים), התש"ל – 1970 </span>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" class="clsRemark"><br>
+            <span id="Field3" FieldAlias="">הסבר: במידה ואחד הנושאים שעל סדר יומה של האסיפה הוא אישור עסקה עם בעל שליטה או אישור הצעה חריגה, יש למלא תחילה את טופס ת133 או ת138 בהתאמה, ולאחר מכן נדרש לדווח גם טופס זה. </span>
+          </td>
+        </tr>
+        <tr>
+          <td><br><br>
+            <table border="0" dir="rtl" style="width:100%" align="right">
+              <tr>
+                <td>
+                  <table cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <span id="Field4" FieldAlias="">התאגיד מודיע על: </span>                      
+                      </td>
+                      <td style="padding-right:5px">                  
+                        
+                            <em>
+                              <span id="Field5" FieldAlias="IsConvening"><input type="radio" id="Field5" name="C_Field5" FieldAlias="IsConvening" disabled checked></input></span>
+                            </em>
+                          
+                        
+                        <span id="Field6" FieldAlias="">כינוס אסיפה </span>
+                      </td>
+                      <td style="padding-right:5px">                  
+                        
+                            <em>
+                              <span id="Field121" FieldAlias="IsOngoingMeeting"><input type="radio" id="Field121" name="C_Field5" FieldAlias="IsOngoingMeeting" disabled ></input></span>
+                            </em>
+                          
+                        
+                        <span id="Field122" FieldAlias="">קיום אסיפת המשך </span>
+                      </td>
+                      <td style="padding-right:5px">                  
+                        
+                            <em>
+                              <span id="Field7" FieldAlias="IsPostponed"><input type="radio" id="Field7" name="C_Field5" FieldAlias="IsPostponed" disabled ></input></span>
+                            </em>
+                          
+                        
+                        <span id="Field8" FieldAlias="">דחיית אסיפה </span>
+                      </td>                      
+                      <td style="padding-right:5px">                   
+                        
+                            <em>
+                              <span id="Field95" FieldAlias="IsPostponedWithoutDate"><input type="radio" id="Field95" name="C_Field5" FieldAlias="IsPostponedWithoutDate" disabled ></input></span>
+                            </em>
+                          
+                        
+                        <span id="Field31" FieldAlias="">דחיית אסיפה למועד לא ידוע </span>
+                      </td>
+                      <td style="padding-right:5px">                  
+                        
+                            <em>
+                              <span id="Field9" FieldAlias="IsCancelled"><input type="radio" id="Field9" name="C_Field5" FieldAlias="IsCancelled" disabled ></input></span>
+                            </em>
+                          
+                        
+                        <span id="Field10" FieldAlias="">ביטול אסיפה </span>
+                      </td>
+                    </tr>
+                  </table>                  
+                </td>                
+              </tr>	
+              <tr>
+                <td><br>
+                  <span id="Field106" FieldAlias="">מספר האסמכתא של ההודעה האחרונה על האסיפה הוא </span>
+                  
+								     <em>
+									<span id="Field41" FieldAlias="ReferenceMeetingProofID" dir="ltr">_________</span>
+								    </em>
+							                       
+                  <span id="Field57" FieldAlias="">, שזומנה לתאריך </span>
+                  
+								     <em>
+									<span id="Field94" FieldAlias="ReferenceMeetingDate">_________</span>
+								    </em>
+							        
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td style="vertical-align:top">
+                        <span id="Field11" FieldAlias="">סיבת דחייה או ביטול : </span>                       
+                      </td>
+                      <td style="vertical-align:top;padding-right:5px">
+                        <em>
+                          <span id="Field123" FieldAlias="RejectionReason">_________</span>                       
+                        </em>
+                      </td>
+                      <td style="vertical-align:top;padding-right:5px">
+                        
+                            <em>
+                              <textarea id="Field12" FieldAlias="ReferenceMeetingReason" class="TextareaDeploy" style="width:400px" readonly>_________</textarea>
+                            </em>
+                                                                    
+                      </td>
+                    </tr>  
+                  </table>                  
+                </td>
+              </tr>
+              <tr>
+                <td class="clsRemark">
+                  <span id="Field58" FieldAlias="">הסבר: יש להתייחס למספר אסמכתא של ההודעה האחרונה של כינוס או דחיית האסיפה </span>                  
+                </td>
+              </tr>
+              <tr>
+                <td><br>
+                <span id="Field13" FieldAlias="">1. בתאריך: </span>
+                
+								     <em>
+									<span id="Field14" FieldAlias="ConveningDecisionDate">18/12/2014</span>
+								    </em>
+							        
+                  </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px">
+                  <span id="Field16" FieldAlias="">הוחלט על </span>
+                  
+                  <em>
+                    <span id="Field124" FieldAlias="SummonsOrReject">זימון</span>  
+                  </em>
+                  
+                  <em>
+                    <span id="Field17" FieldAlias="MeetingType">אסיפה כללית</span>  
+                  </em>
+                  
+                  
+                      <em>
+                        <textarea id="Field18" FieldAlias="MeetingTypeOther" class="TextareaDeploy" style="width:300px" readonly>_________</textarea>
+                      </em>
+                       
+                  
+                  <span id="Field115" FieldAlias="">, </span>
+                </td>                
+              </tr>
+              <tr>
+                <td style="padding-right:15px">
+                  <span id="Field20" FieldAlias="">שתתכנס ביום </span>
+                  
+                  <em>
+                    <span id="Field21" FieldAlias="MeetingDay">א'</span>  
+                  </em>
+                  
+                  <span id="Field22" FieldAlias="">בתאריך: </span>
+                  
+                  
+                      <em>
+                        <span id="Field23" FieldAlias="MeetingDate">08/02/2015</span>
+                      </em>
+                           
+                  
+                  <span id="Field24" FieldAlias="">בשעה : </span>
+                  
+                  
+                      <em>
+                        <span id="Field25" FieldAlias="MeetingTime">16:00</span>
+                      </em>
+                        
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px">                  
+                  <table>
+                    <tr>
+                      <td valign="top">                  
+                        <span id="Field27" FieldAlias="">בכתובת: </span>
+                      </td>
+                      <td valign="top">                  
+                        
+                            <em>
+                              <textarea id="Field28" FieldAlias="MeetingAddress" class="TextareaDeploy" style="width:400px" readonly>במשרדי החברה, ברחוב היצירה 3, קומה 12, רמת גן. </textarea>
+                            </em>
+                             
+                      </td>      
+                    </tr>
+                  </table>
+                </td>
+              </tr>              
+              <tr>
+                <td><br>
+                  <span id="Field29" FieldAlias="">2. מספר נייר הערך בבורסה המזכה את המחזיק בו להשתתף באסיפה </span>
+                  
+                                        
+                        
+                  
+                  
+                      <em>
+                        <span id="Field32" FieldAlias="SecurityNumber" dir="ltr">584011</span>
+                      </em>
+                        
+                </td>
+              </tr>
+              <tr>
+                <td class="clsRemark" style="padding-right:15px"> 
+                 		<span id="Field120" FieldAlias="">הסבר: אם נדרשת אסיפה על יותר ממספר נייר אחד, יש לדווח ת460 על כל נייר נוסף בנפרד. דיווחים שבהם יצוינו מספרי נייר נוספים, יחייבו שליחת דוח מתקן </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px"> 
+                  <span id="Field34" FieldAlias="">המועד הקובע לזכאות להשתתף ולהצביע באסיפה: </span>
+                  
+                  
+                      <em>
+                        <span id="Field35" FieldAlias="MeetingEffectiveDate">08/01/2015</span>
+                      </em>
+                        
+                </td>
+              </tr>
+              <tr>
+                <td><br>
+                  <span id="Field36" FieldAlias="">3. על סדר היום: </span>                  
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px"> 
+                  <span id="Field38" FieldAlias="">נושאים/החלטות שיועלו באסיפה: </span>                  
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px"> 
+                  <table name="Section1" id="Section1" dir="rtl" border="1" XMLType="Section" style="width:100%">
+                    <tr>
+                      <td>
+                        
+                            
+                              
+                            <table>                               
+                              <tr>                                                                             
+                                <td class="clsHeader">
+                                  <span id="Row0SectionNumeric1" FieldAlias="">1 </span>
+                                </td>               
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row0Field40" FieldAlias="">הנושא / ההחלטה ופרטיו : </span>                                                                                                                 
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <em>
+                                    <textarea id="Row0Field100" FieldAlias="ItemSubject" class="TextareaDeploy" style="width:650px" readonly>דיון בדו"ח הדירקטוריון ובדו"חות הכספיים של החברה לשנה שהסתיימה ביום 31 בדצמבר 2013.</textarea>  
+                                  </em>                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <em>
+                                    <span id="Row0Field42" FieldAlias="ItemCategory">_________</span>   
+                                  </em> 
+                                </td>                                  
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row0Field43" FieldAlias="">אסמכתא של הדיווח האחרון בנושא אישור הצעה פרטית (ת138): </span> 
+                                  <em>
+                                    <span id="Row0Field98" FieldAlias="PrivateOfferProofID" dir="ltr">_________</span>                                  
+                                  </em>                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <span id="Row0Field30" FieldAlias="IsTransactionCompanyAndControlling"><input type="checkbox" id="Row0Field30" name="Field30" FieldAlias="IsTransactionCompanyAndControlling" disabled ></input></span>
+                                                                    
+                                  <span id="Row0Field44" FieldAlias="">עסקה בין החברה לבין בעל שליטה בה כאמור בסעיפים 275 ו-320(ו) לחוק החברות. </span>                                   
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-right:20px">
+                                  <span id="Row0Field39" FieldAlias="">אסמכתא של הדיווח האחרון בנושא (ת133): </span>                                  
+                                  
+                                  <em>
+                                    <span id="Row0Field45" FieldAlias="TransactionProofID" dir="ltr">_________</span>                                  
+                                  </em>                                  
+                                </td>
+                              </tr>                                
+                              <tr>
+                                <td><br>
+                                  <span id="Row0Field46" FieldAlias="IsDisclosureAmendment"><input type="checkbox" id="Row0Field46" name="Field46" FieldAlias="IsDisclosureAmendment" disabled ></input></span>                                  
+                                  
+                                  <span id="Row0Field47" FieldAlias="">תיקון גילוי </span>
+                                  
+                                  <span id="Row0Field48" FieldAlias="IsTransactionsCorrectionTerms"><input type="checkbox" id="Row0Field48" name="Field48" FieldAlias="IsTransactionsCorrectionTerms" disabled ></input></span>
+                                                                    
+                                  <span id="Row0Field49" FieldAlias="">תיקון תנאי העסקה </span>
+                                  
+                                  <span id="Row0Field50" FieldAlias="IsOffTheAgenda"><input type="checkbox" id="Row0Field50" name="Field50" FieldAlias="IsOffTheAgenda" disabled ></input></span>
+                                                                    
+                                  <span id="Row0Field51" FieldAlias="">ירד מסדר היום </span>
+                                  
+                                  <span id="Row0Field129" FieldAlias="IsDiscussedInPreviousMeeting"><input type="checkbox" id="Row0Field129" name="Field129" FieldAlias="IsDiscussedInPreviousMeeting" disabled ></input></span>
+                                                                    
+                                  <span id="Row0Field130" FieldAlias="">הנושא נדון באסיפה קודמת </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <span id="Row0Field52" FieldAlias="IsVotingItem"><input type="checkbox" id="Row0Field52" name="Field52" FieldAlias="IsVotingItem" disabled checked></input></span>
+                                                                    
+                                  <span id="Row0Field53" FieldAlias="">נושא לדיווח שאינו להצבעה </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row0Field54" FieldAlias="IsManagementItem"><input type="checkbox" id="Row0Field54" name="Field54" FieldAlias="IsManagementItem" disabled checked></input></span>
+                                                                    
+                                  <span id="Row0Field55" FieldAlias="">זומן בהתאם לסעיף 66(ב) לחוק החברות </span>
+                                </td>
+                              </tr>
+                            </table>
+                            
+                                      
+                                <hr>
+                              
+                            <table>                               
+                              <tr>                                                                             
+                                <td class="clsHeader">
+                                  <span id="Row1SectionNumeric1" FieldAlias="">2</span>
+                                </td>               
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row1Field40" FieldAlias="">הנושא / ההחלטה ופרטיו : </span>                                                                                                                 
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <em>
+                                    <textarea id="Row1Field100" FieldAlias="ItemSubject" class="TextareaDeploy" style="width:650px" readonly>מינוי מחדש של רואה החשבון המבקר של החברה</textarea>  
+                                  </em>                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <em>
+                                    <span id="Row1Field42" FieldAlias="ItemCategory">_________</span>   
+                                  </em> 
+                                </td>                                  
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row1Field43" FieldAlias="">אסמכתא של הדיווח האחרון בנושא אישור הצעה פרטית (ת138): </span> 
+                                  <em>
+                                    <span id="Row1Field98" FieldAlias="PrivateOfferProofID" dir="ltr">_________</span>                                  
+                                  </em>                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <span id="Row1Field30" FieldAlias="IsTransactionCompanyAndControlling"><input type="checkbox" id="Row1Field30" name="Field30" FieldAlias="IsTransactionCompanyAndControlling" disabled ></input></span>
+                                                                    
+                                  <span id="Row1Field44" FieldAlias="">עסקה בין החברה לבין בעל שליטה בה כאמור בסעיפים 275 ו-320(ו) לחוק החברות. </span>                                   
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-right:20px">
+                                  <span id="Row1Field39" FieldAlias="">אסמכתא של הדיווח האחרון בנושא (ת133): </span>                                  
+                                  
+                                  <em>
+                                    <span id="Row1Field45" FieldAlias="TransactionProofID" dir="ltr">_________</span>                                  
+                                  </em>                                  
+                                </td>
+                              </tr>                                
+                              <tr>
+                                <td><br>
+                                  <span id="Row1Field46" FieldAlias="IsDisclosureAmendment"><input type="checkbox" id="Row1Field46" name="Field46" FieldAlias="IsDisclosureAmendment" disabled ></input></span>                                  
+                                  
+                                  <span id="Row1Field47" FieldAlias="">תיקון גילוי </span>
+                                  
+                                  <span id="Row1Field48" FieldAlias="IsTransactionsCorrectionTerms"><input type="checkbox" id="Row1Field48" name="Field48" FieldAlias="IsTransactionsCorrectionTerms" disabled ></input></span>
+                                                                    
+                                  <span id="Row1Field49" FieldAlias="">תיקון תנאי העסקה </span>
+                                  
+                                  <span id="Row1Field50" FieldAlias="IsOffTheAgenda"><input type="checkbox" id="Row1Field50" name="Field50" FieldAlias="IsOffTheAgenda" disabled ></input></span>
+                                                                    
+                                  <span id="Row1Field51" FieldAlias="">ירד מסדר היום </span>
+                                  
+                                  <span id="Row1Field129" FieldAlias="IsDiscussedInPreviousMeeting"><input type="checkbox" id="Row1Field129" name="Field129" FieldAlias="IsDiscussedInPreviousMeeting" disabled ></input></span>
+                                                                    
+                                  <span id="Row1Field130" FieldAlias="">הנושא נדון באסיפה קודמת </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <span id="Row1Field52" FieldAlias="IsVotingItem"><input type="checkbox" id="Row1Field52" name="Field52" FieldAlias="IsVotingItem" disabled ></input></span>
+                                                                    
+                                  <span id="Row1Field53" FieldAlias="">נושא לדיווח שאינו להצבעה </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row1Field54" FieldAlias="IsManagementItem"><input type="checkbox" id="Row1Field54" name="Field54" FieldAlias="IsManagementItem" disabled checked></input></span>
+                                                                    
+                                  <span id="Row1Field55" FieldAlias="">זומן בהתאם לסעיף 66(ב) לחוק החברות </span>
+                                </td>
+                              </tr>
+                            </table>
+                            
+                                      
+                                <hr>
+                              
+                            <table>                               
+                              <tr>                                                                             
+                                <td class="clsHeader">
+                                  <span id="Row2SectionNumeric1" FieldAlias="">3</span>
+                                </td>               
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row2Field40" FieldAlias="">הנושא / ההחלטה ופרטיו : </span>                                                                                                                 
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <em>
+                                    <textarea id="Row2Field100" FieldAlias="ItemSubject" class="TextareaDeploy" style="width:650px" readonly>מינוי דירקטורים שאינם דירקטורים חיצוניים</textarea>  
+                                  </em>                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <em>
+                                    <span id="Row2Field42" FieldAlias="ItemCategory">מינוי או פיטורין של דירקטור כאמור בסעיפים 59 ו-230 לחוק החברות</span>   
+                                  </em> 
+                                </td>                                  
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row2Field43" FieldAlias="">אסמכתא של הדיווח האחרון בנושא אישור הצעה פרטית (ת138): </span> 
+                                  <em>
+                                    <span id="Row2Field98" FieldAlias="PrivateOfferProofID" dir="ltr">_________</span>                                  
+                                  </em>                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <span id="Row2Field30" FieldAlias="IsTransactionCompanyAndControlling"><input type="checkbox" id="Row2Field30" name="Field30" FieldAlias="IsTransactionCompanyAndControlling" disabled ></input></span>
+                                                                    
+                                  <span id="Row2Field44" FieldAlias="">עסקה בין החברה לבין בעל שליטה בה כאמור בסעיפים 275 ו-320(ו) לחוק החברות. </span>                                   
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-right:20px">
+                                  <span id="Row2Field39" FieldAlias="">אסמכתא של הדיווח האחרון בנושא (ת133): </span>                                  
+                                  
+                                  <em>
+                                    <span id="Row2Field45" FieldAlias="TransactionProofID" dir="ltr">_________</span>                                  
+                                  </em>                                  
+                                </td>
+                              </tr>                                
+                              <tr>
+                                <td><br>
+                                  <span id="Row2Field46" FieldAlias="IsDisclosureAmendment"><input type="checkbox" id="Row2Field46" name="Field46" FieldAlias="IsDisclosureAmendment" disabled ></input></span>                                  
+                                  
+                                  <span id="Row2Field47" FieldAlias="">תיקון גילוי </span>
+                                  
+                                  <span id="Row2Field48" FieldAlias="IsTransactionsCorrectionTerms"><input type="checkbox" id="Row2Field48" name="Field48" FieldAlias="IsTransactionsCorrectionTerms" disabled ></input></span>
+                                                                    
+                                  <span id="Row2Field49" FieldAlias="">תיקון תנאי העסקה </span>
+                                  
+                                  <span id="Row2Field50" FieldAlias="IsOffTheAgenda"><input type="checkbox" id="Row2Field50" name="Field50" FieldAlias="IsOffTheAgenda" disabled ></input></span>
+                                                                    
+                                  <span id="Row2Field51" FieldAlias="">ירד מסדר היום </span>
+                                  
+                                  <span id="Row2Field129" FieldAlias="IsDiscussedInPreviousMeeting"><input type="checkbox" id="Row2Field129" name="Field129" FieldAlias="IsDiscussedInPreviousMeeting" disabled ></input></span>
+                                                                    
+                                  <span id="Row2Field130" FieldAlias="">הנושא נדון באסיפה קודמת </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <span id="Row2Field52" FieldAlias="IsVotingItem"><input type="checkbox" id="Row2Field52" name="Field52" FieldAlias="IsVotingItem" disabled ></input></span>
+                                                                    
+                                  <span id="Row2Field53" FieldAlias="">נושא לדיווח שאינו להצבעה </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row2Field54" FieldAlias="IsManagementItem"><input type="checkbox" id="Row2Field54" name="Field54" FieldAlias="IsManagementItem" disabled checked></input></span>
+                                                                    
+                                  <span id="Row2Field55" FieldAlias="">זומן בהתאם לסעיף 66(ב) לחוק החברות </span>
+                                </td>
+                              </tr>
+                            </table>
+                            
+                                      
+                                <hr>
+                              
+                            <table>                               
+                              <tr>                                                                             
+                                <td class="clsHeader">
+                                  <span id="Row3SectionNumeric1" FieldAlias="">4</span>
+                                </td>               
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row3Field40" FieldAlias="">הנושא / ההחלטה ופרטיו : </span>                                                                                                                 
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <em>
+                                    <textarea id="Row3Field100" FieldAlias="ItemSubject" class="TextareaDeploy" style="width:650px" readonly>מינוי דירקטורים חיצוניים</textarea>  
+                                  </em>                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <em>
+                                    <span id="Row3Field42" FieldAlias="ItemCategory">מינוי / הארכת כהונת דירקטור חיצוני כאמור בסעיפים 239(ב) או 245 לחוק החברות</span>   
+                                  </em> 
+                                </td>                                  
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row3Field43" FieldAlias="">אסמכתא של הדיווח האחרון בנושא אישור הצעה פרטית (ת138): </span> 
+                                  <em>
+                                    <span id="Row3Field98" FieldAlias="PrivateOfferProofID" dir="ltr">_________</span>                                  
+                                  </em>                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <span id="Row3Field30" FieldAlias="IsTransactionCompanyAndControlling"><input type="checkbox" id="Row3Field30" name="Field30" FieldAlias="IsTransactionCompanyAndControlling" disabled ></input></span>
+                                                                    
+                                  <span id="Row3Field44" FieldAlias="">עסקה בין החברה לבין בעל שליטה בה כאמור בסעיפים 275 ו-320(ו) לחוק החברות. </span>                                   
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-right:20px">
+                                  <span id="Row3Field39" FieldAlias="">אסמכתא של הדיווח האחרון בנושא (ת133): </span>                                  
+                                  
+                                  <em>
+                                    <span id="Row3Field45" FieldAlias="TransactionProofID" dir="ltr">_________</span>                                  
+                                  </em>                                  
+                                </td>
+                              </tr>                                
+                              <tr>
+                                <td><br>
+                                  <span id="Row3Field46" FieldAlias="IsDisclosureAmendment"><input type="checkbox" id="Row3Field46" name="Field46" FieldAlias="IsDisclosureAmendment" disabled ></input></span>                                  
+                                  
+                                  <span id="Row3Field47" FieldAlias="">תיקון גילוי </span>
+                                  
+                                  <span id="Row3Field48" FieldAlias="IsTransactionsCorrectionTerms"><input type="checkbox" id="Row3Field48" name="Field48" FieldAlias="IsTransactionsCorrectionTerms" disabled ></input></span>
+                                                                    
+                                  <span id="Row3Field49" FieldAlias="">תיקון תנאי העסקה </span>
+                                  
+                                  <span id="Row3Field50" FieldAlias="IsOffTheAgenda"><input type="checkbox" id="Row3Field50" name="Field50" FieldAlias="IsOffTheAgenda" disabled ></input></span>
+                                                                    
+                                  <span id="Row3Field51" FieldAlias="">ירד מסדר היום </span>
+                                  
+                                  <span id="Row3Field129" FieldAlias="IsDiscussedInPreviousMeeting"><input type="checkbox" id="Row3Field129" name="Field129" FieldAlias="IsDiscussedInPreviousMeeting" disabled ></input></span>
+                                                                    
+                                  <span id="Row3Field130" FieldAlias="">הנושא נדון באסיפה קודמת </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <span id="Row3Field52" FieldAlias="IsVotingItem"><input type="checkbox" id="Row3Field52" name="Field52" FieldAlias="IsVotingItem" disabled ></input></span>
+                                                                    
+                                  <span id="Row3Field53" FieldAlias="">נושא לדיווח שאינו להצבעה </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row3Field54" FieldAlias="IsManagementItem"><input type="checkbox" id="Row3Field54" name="Field54" FieldAlias="IsManagementItem" disabled checked></input></span>
+                                                                    
+                                  <span id="Row3Field55" FieldAlias="">זומן בהתאם לסעיף 66(ב) לחוק החברות </span>
+                                </td>
+                              </tr>
+                            </table>
+                            
+                                      
+                                <hr>
+                              
+                            <table>                               
+                              <tr>                                                                             
+                                <td class="clsHeader">
+                                  <span id="Row4SectionNumeric1" FieldAlias="">5</span>
+                                </td>               
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row4Field40" FieldAlias="">הנושא / ההחלטה ופרטיו : </span>                                                                                                                 
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <em>
+                                    <textarea id="Row4Field100" FieldAlias="ItemSubject" class="TextareaDeploy" style="width:650px" readonly>אישור גמול דירקטורים בלתי תלויים</textarea>  
+                                  </em>                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <em>
+                                    <span id="Row4Field42" FieldAlias="ItemCategory">_________</span>   
+                                  </em> 
+                                </td>                                  
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row4Field43" FieldAlias="">אסמכתא של הדיווח האחרון בנושא אישור הצעה פרטית (ת138): </span> 
+                                  <em>
+                                    <span id="Row4Field98" FieldAlias="PrivateOfferProofID" dir="ltr">_________</span>                                  
+                                  </em>                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <span id="Row4Field30" FieldAlias="IsTransactionCompanyAndControlling"><input type="checkbox" id="Row4Field30" name="Field30" FieldAlias="IsTransactionCompanyAndControlling" disabled ></input></span>
+                                                                    
+                                  <span id="Row4Field44" FieldAlias="">עסקה בין החברה לבין בעל שליטה בה כאמור בסעיפים 275 ו-320(ו) לחוק החברות. </span>                                   
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-right:20px">
+                                  <span id="Row4Field39" FieldAlias="">אסמכתא של הדיווח האחרון בנושא (ת133): </span>                                  
+                                  
+                                  <em>
+                                    <span id="Row4Field45" FieldAlias="TransactionProofID" dir="ltr">_________</span>                                  
+                                  </em>                                  
+                                </td>
+                              </tr>                                
+                              <tr>
+                                <td><br>
+                                  <span id="Row4Field46" FieldAlias="IsDisclosureAmendment"><input type="checkbox" id="Row4Field46" name="Field46" FieldAlias="IsDisclosureAmendment" disabled ></input></span>                                  
+                                  
+                                  <span id="Row4Field47" FieldAlias="">תיקון גילוי </span>
+                                  
+                                  <span id="Row4Field48" FieldAlias="IsTransactionsCorrectionTerms"><input type="checkbox" id="Row4Field48" name="Field48" FieldAlias="IsTransactionsCorrectionTerms" disabled ></input></span>
+                                                                    
+                                  <span id="Row4Field49" FieldAlias="">תיקון תנאי העסקה </span>
+                                  
+                                  <span id="Row4Field50" FieldAlias="IsOffTheAgenda"><input type="checkbox" id="Row4Field50" name="Field50" FieldAlias="IsOffTheAgenda" disabled ></input></span>
+                                                                    
+                                  <span id="Row4Field51" FieldAlias="">ירד מסדר היום </span>
+                                  
+                                  <span id="Row4Field129" FieldAlias="IsDiscussedInPreviousMeeting"><input type="checkbox" id="Row4Field129" name="Field129" FieldAlias="IsDiscussedInPreviousMeeting" disabled ></input></span>
+                                                                    
+                                  <span id="Row4Field130" FieldAlias="">הנושא נדון באסיפה קודמת </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                  <span id="Row4Field52" FieldAlias="IsVotingItem"><input type="checkbox" id="Row4Field52" name="Field52" FieldAlias="IsVotingItem" disabled ></input></span>
+                                                                    
+                                  <span id="Row4Field53" FieldAlias="">נושא לדיווח שאינו להצבעה </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span id="Row4Field54" FieldAlias="IsManagementItem"><input type="checkbox" id="Row4Field54" name="Field54" FieldAlias="IsManagementItem" disabled checked></input></span>
+                                                                    
+                                  <span id="Row4Field55" FieldAlias="">זומן בהתאם לסעיף 66(ב) לחוק החברות </span>
+                                </td>
+                              </tr>
+                            </table>
+                            
+                          
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>              
+              <tr>
+                <td style="padding-right:20px">
+                  
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px"><br>
+                  <span id="Field56" FieldAlias="">צרוף דוח זימון האסיפה: </span>
+                   
+                  
+                      <em>
+                        <span id="Field59" FieldAlias="DetailedTopicsFile" localPath="C:\Users\jonathan\Documents\ליבנטל\מגנא\אסיפה 1-15\דיווח_מיידי_זימון_אסיפה_01012015_isa.pdf" onclick="OpenFile(document.all ? HeaderProofValue.innerText : HeaderProofValue.textContent,this);" style="cursor:pointer"><font color="darkblue"><U>דיווח_מיידי_זימון_אסיפה_01012015_isa.pdf</U></font></span>
+                      </em>
+                                         
+                </td>
+              </tr>
+              <tr>
+                <td><br>
+                  <span id="Field62" FieldAlias="">4. מצורף/ים </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px">
+                  
+                      <em>
+                        <span id="Field63" FieldAlias="IsVotingFile"><input type="checkbox" id="Field63" name="Field63" FieldAlias="IsVotingFile" disabled checked></input></span>
+                      </em>
+                                         
+
+                  <span id="Field64" FieldAlias="">נוסח כתב הצבעה </span>                                
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px">
+                  
+                      <em>
+                        <span id="Field66" FieldAlias="IsPositionPaper"><input type="checkbox" id="Field66" name="Field66" FieldAlias="IsPositionPaper" disabled ></input></span>
+                      </em>
+                                   
+                  
+                  <span id="Field67" FieldAlias="">הודעת עמדה </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px">
+                  
+                      <em>
+                        <span id="Field65" FieldAlias="VotingFile" localPath="C:\Users\jonathan\Documents\ליבנטל\מגנא\אסיפה 1-15\כתב_הצבעה_01012015_isa.pdf" onclick="OpenFile(document.all ? HeaderProofValue.innerText : HeaderProofValue.textContent,this);" style="cursor:pointer"><font color="darkblue"><U>כתב_הצבעה_01012015_isa.pdf</U></font></span>
+                      </em>
+                           
+                </td>
+              </tr>                  
+              <tr>
+                <td style="padding-right:15px"><br>
+                  
+                      <em>
+                        <span id="Field68" FieldAlias="IsCandidateStatement"><input type="checkbox" id="Field68" name="Field68" FieldAlias="IsCandidateStatement" disabled checked></input></span>
+                      </em>
+                                   
+                  
+                  <span id="Field69" FieldAlias="">הצהרת המועמד לכהן כדירקטור בתאגיד </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px">
+                  
+                      <em>
+                        <span id="Field70" FieldAlias="IsIndependentDirectorStatement"><input type="checkbox" id="Field70" name="Field70" FieldAlias="IsIndependentDirectorStatement" disabled checked></input></span>
+                      </em>
+                                   
+                  
+                  <span id="Field71" FieldAlias="">הצהרת דירקטור בלתי תלוי </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px">
+                  
+                      <em>
+                        <span id="Field72" FieldAlias="IsExternalDirectorStatement"><input type="checkbox" id="Field72" name="Field72" FieldAlias="IsExternalDirectorStatement" disabled checked></input></span>
+                      </em>
+                                   
+                  
+                  <span id="Field73" FieldAlias="">הצהרת דירקטור חיצוני </span>                       
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px">
+                  
+                      <em>
+                        <span id="Field117" FieldAlias="OtherFile" localPath="C:\Users\jonathan\Documents\ליבנטל\מגנא\אסיפה 1-15\ליבנטל_-_הצהרת_דירקטורים_isa.pdf" onclick="OpenFile(document.all ? HeaderProofValue.innerText : HeaderProofValue.textContent,this);" style="cursor:pointer"><font color="darkblue"><U>ליבנטל_-_הצהרת_דירקטורים_isa.pdf</U></font></span>
+                      </em>
+                     
+                </td>
+              </tr>              
+              <tr>
+                <td style="padding-right:15px" class="clsRemark">
+                  <span id="Field74" FieldAlias="">הסבר: במידה וצורף כתב הצבעה ו/או הודעת עמדה יש לוודא כי הם ערוכים לפי תקנות החברות (הצבעה בכתב והודעות עמדה), התשס"ו-2005 </span>                
+                </td>
+              </tr>
+               <tr>
+                <td style="padding-right:15px"><br>
+                  <span id="Field75" FieldAlias="">כתובת אתר האינטרנט שבו ניתן להצביע: </span>    
+                                        
+                      <em>                        
+                          <textarea id="Field76" FieldAlias="VotingSiteUrl" class="TextareaDeploy" style="width:400px" readonly>_________</textarea>                                                  
+                      </em>
+							                                    
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px" class="clsRemark">
+                  <span id="Field77" FieldAlias="">הסבר: יש למלא שדה זה במידה והחברה מאפשרת הצבעה באמצעות האינטרנט לפי תקנה 5 (ג) לתקנות החברות (הצבעה בכתב והודעות עמדה), התשס"ו-2005. </span>                
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px"><br>
+                  <span id="Field118" FieldAlias="">כתובת הדואר האלקטרוני שחבר הבורסה רשאי להמציא שם את החומר שהוא חייב בהמצאתו לחברה לפי תקנה 4 (ג) (1) לתקנות החברות (הצבעה בכתב והודעות עמדה), התשס"ו - 2005: </span>                   
+                </td>                
+              </tr>
+              <tr>
+                <td style="padding-right:15px">
+                                        
+                      <em>                        
+                          <textarea id="Field119" FieldAlias="Email" class="TextareaDeploy" style="width:500px" readonly>_________</textarea>                                                  
+                      </em>
+							     
+                </td>                
+              </tr>
+              <tr>
+                <td><br>
+                  <span id="Field78" FieldAlias="">5. המניין החוקי לקיום האסיפה: </span>                   
+                </td>                
+              </tr>
+              <tr>
+                <td style="padding-right:15px">
+                  
+                      <em>
+                        <textarea id="Field81" FieldAlias="ValidQuorumCondition" class="TextareaDeploy" style="width:650px" readonly>המניין החוקי לקיום אסיפה כללית הוא נוכחות של לפחות שני בעלי מניות הנוכחים בעצמם, על ידי שליח, או באמצעות כתב הצבעה, והמחזיקים או המייצגים לפחות 25% מזכויות ההצבעה בחברה, תוך מחצית השעה מן המועד שנקבע לפתיחת האסיפה.</textarea>
+                      </em>
+                      
+                  
+                  <span id="Field110" FieldAlias="">. </span>
+                </td>
+              </tr>
+              <tr>
+                <td><br>
+                  <span id="Field114" FieldAlias="">6. </span> 
+                  
+                  
+                      <em>
+                        <span id="Field126" FieldAlias="RB_MeetingHeldOn"><input type="radio" id="Field126" name="C_Field126" FieldAlias="RB_MeetingHeldOn" disabled checked></input></span>
+                      </em>
+                      
+                  
+                  <span id="Field82" FieldAlias="">בהעדר מניין חוקי, האסיפה הנדחית תתקיים בתאריך </span> 
+                  
+                  
+                      <em>
+                        <span id="Field85" FieldAlias="QuorumPostponedMeetingDate">15/02/2015</span>
+                      </em>
+                      
+                  
+                  <span id="Field86" FieldAlias="">, בשעה </span> 
+                  
+                  
+                      <em>
+                        <span id="Field87" FieldAlias="QuorumPostponedMeetingTime">16:00</span>
+                      </em>
+                     
+                  
+                  <span id="Field84" FieldAlias="">, </span>       
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:35px">
+                  <table cellpading="3" cellspacing="3">
+                    <tr>
+                      <td style="vertical-align:top">
+                        <span id="Field88" FieldAlias="">בכתובת: </span>       
+                      </td>
+                      <td style="vertical-align:top;padding-right:5px">
+                        
+                            <em>
+                              <textarea id="Field89" FieldAlias="QuorumPostponedMeetingAddress" class="TextareaDeploy" style="width:400px" readonly>במשרדי החברה, ברחוב היצירה 3, קומה 12, רמת גן,</textarea>
+                            </em>
+                            
+                        
+                        <span id="Field112" FieldAlias="">. </span> 
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:18px">
+                  
+                      <em>
+                        <span id="Field127" FieldAlias="RB_MeetingCancel"><input type="radio" id="Field127" name="C_Field126" FieldAlias="RB_MeetingCancel" disabled ></input></span>
+                      </em>
+                      
+                  
+                  <span id="Field128" FieldAlias="">בהעדר מניין חוקי האסיפה לא תתקיים. </span> 
+                </td>
+              </tr>
+              <tr>
+                <td><br>
+                   <span id="Field90" FieldAlias="">7. המקום והזמנים שבהם ניתן לעיין בכל הצעת החלטה שנוסחה לא הובא במלואו בפרוט סדר היום לעיל </span>                    
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right:15px">
+                  
+                      <em>
+                        <textarea id="Field93" FieldAlias="MeetingExtraInformation" class="TextareaDeploy" style="width:450px" readonly>במשרדי החברה, ברחוב היצירה 3, קומה 12, רמת גן, בימים א-ה בין השעות 16:30-09:00, לאחר תיאום מראש בטלפון 03-6129988.</textarea>
+                      </em>
+                      
+                  
+                  <span id="Field112" FieldAlias="">. </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+              
+        <tr>
+          <td style="Height:30"></td>
+        </tr>
+        <tr>
+          <td>
+            
+          </HideDataFromEscortFile>
+          
+          <link rel="STYLESHEET" href="../StyleSheet/General.css">
+          
+              <table class="clsTable" dir="rtl" align="center" style="width:100%">
+                <tr>
+                  <td class="TableFrmHeader">
+                    <em>
+                      <textarea id="TextHofshi" FieldAlias="TextHofshi" class="TextareaDeploy" style="width:695px" readonly> </textarea>
+                    </em>
+                  </td>
+                </tr>                
+                <tr>
+                  <td class="clsTable">
+                    <span id="FooterFroopNumberT" FieldAlias="">מספרי אסמכתאות של מסמכים קודמים בנושא (אין האזכור מהווה הכללה על דרך הפניה): </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <font face="ariel" size="2" color="black" class="clsTable">
+                      <em><b>
+                        
+                        
+                        
+                                        
+                            <span id="FooterProofNum1" FieldAlias="FooterMisparAsmachta1" dir="ltr"> </span>
+                          
+                        
+                        &nbsp;&nbsp;&nbsp;	
+                                                
+                        
+                        
+                        
+                                        
+                            <span id="FooterProofNum2" FieldAlias="FooterMisparAsmachta2" dir="ltr"> </span>
+                          
+                        
+                        &nbsp;&nbsp;&nbsp;                        
+                        
+                        
+                        
+                        
+                                        
+                            <span id="FooterProofNum3" FieldAlias="FooterMisparAsmachta3" dir="ltr"> </span>
+                          
+                      </b></em>
+                    </font>				
+                  </td>
+                </tr>
+                <tr>
+                  <td>                    
+                    								
+                        <span id="FooterPrevNameAll" FieldAlias="">שמות קודמים של ישות מדווחת: </span>
+                      
+                    
+                    <span id="FooterPrevNameD" FieldAlias="ShemYeshutKodem">א. ליבנטל אחזקות בע"מ, לומיר אחזקות בע"מ</span>
+                  </td>
+                </tr>
+                <tr align="left">
+                  <td>
+                    <span id="FooterDateUpdate" FieldAlias="">תאריך עדכון מבנה הטופס: </span>
+                    <span id="FooterDateUpdateD" FieldAlias="TaarichIdkunMivne">31/12/2014</span>                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span id="FooterSignatoryName" FieldAlias="">שם מדווח אלקטרוני: </span>
+                    
+                    <span id="FooterSignatoryNameD" FieldAlias="FooterShemMedaveach">אייזקס יונתן</span>
+                    ,
+                    <span id="FooterSignatoryJob" FieldAlias="">תפקידו: </span>
+                    
+                    <span id="FooterSignatoryJobD" FieldAlias="TafkidBaTaagid">חשב ומנהל כספים</span>
+                    ,
+                    
+                    <span id="FooterEmployCompany" FieldAlias="">שם חברה מעסיקה: </span>
+                    
+                    <span id="FooterCompanyNameD" FieldAlias="FooterShemHevra"></span>
+                    .
+                  </td>
+                </tr>
+                <tr>
+                  <td>						
+                    <span id="FooterAddress" FieldAlias="Street">היצירה</span>
+                    <span id="FooterStreetNumber" FieldAlias="StreetNumber">3</span>
+                    <span id="FooterCity" FieldAlias="City">רמת גן</span>
+                    <span id="FooterZipCode" FieldAlias="ZipCode">5252141</span>                                        
+                    ,
+                    
+                    <span id="FooterPhone" FieldAlias="">טלפון: </span>
+                    <span id="FooterPhoneD" FieldAlias="Telephone">03-6129988</span>
+                    ,
+                    
+                    <span id="FooterFax" FieldAlias="">פקס: </span>
+                    <span id="FooterFaxD" FieldAlias="FooterFax1">03-5750780</span>
+                    ,					
+                    
+                    <span id="FooterEmail" FieldAlias="">דואר אלקטרוני: </span>
+                    <span id="FooterEmailD" FieldAlias="FooterDoarElectroniMedaveach">jonathan@lbt.co.il</span>
+                    
+                    <span style="display:none">
+                      <span id="FooterYaelD" FieldAlias="FooterYael">1</span>
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            
+        
+          </td>
+        </tr>
+      </table>
+    </body>
+  </html>

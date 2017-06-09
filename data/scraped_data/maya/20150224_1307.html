@@ -1,0 +1,631 @@
+﻿<html xmlns:msxsl="urn:schemas-microsoft-com:xslt">	
+<title></title>
+<head>
+
+<script type="text/javascript">
+<!--
+window["_tsbp_"] = { ba : "X-TS-BP-Action", bh : "X-TS-AJAX-Request"};
+//-->
+</script>
+<script type="text/javascript" src="/TSbd/08a2325c7eab20004374312c17fa4abfffaa7e7faab0006b68213bf2c57498d357271017d77baea5?type=2"></script>
+<script type="text/javascript" src="../../scripts/utils.js"></script>
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1255">
+    <STYLE>BODY {
+	BACKGROUND-COLOR: #feffff; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px; FONT-WEIGHT: bolder
+}
+.clsTable {
+	BORDER-BOTTOM: #173d65 thin; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsMessage {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px; FONT-WEIGHT: bolder
+}
+.TblHeader {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #173d65; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bolder
+}
+TABLE {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+BUTTON {
+	BACKGROUND-COLOR: #53769b; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bolder
+}
+.clsSelectRowMenu {
+	BORDER-BOTTOM: moccasin thin inset; BORDER-LEFT: moccasin thin inset; BACKGROUND-COLOR: #4682b4; COLOR: lightyellow; FONT-SIZE: 13px; BORDER-TOP: moccasin thin inset; CURSOR: hand; FONT-WEIGHT: bolder; BORDER-RIGHT: moccasin thin inset
+}
+.TblDetail {
+	BACKGROUND-COLOR: antiquewhite
+}
+.clsHeader {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 15px; FONT-WEIGHT: bolder
+}
+.clsHeaders {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 15px; FONT-WEIGHT: bolder; TEXT-DECORATION: underline
+}
+.clsTableDetails {
+	BACKGROUND-COLOR: #bdcedd
+}
+.clsBut {
+	BACKGROUND-COLOR: #53769b; WIDTH: 70px; FONT-FAMILY: Arial; HEIGHT: 20px; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bolder
+}
+.clsSelectedSearch {
+	COLOR: #d4a302; FONT-WEIGHT: bolder
+}
+.clsSelect {
+	WIDTH: 165px; HEIGHT: 20px; FONT-SIZE: 13px
+}
+.clsDisabledText {
+	BACKGROUND-COLOR: #bdcedd; WIDTH: 165px
+}
+.clsInputText {
+	WIDTH: 165px; HEIGHT: 20px; FONT-SIZE: 13px
+}
+.clsWinButton {
+	BACKGROUND-COLOR: #53769b; WIDTH: 25px; HEIGHT: 20px; COLOR: white; FONT-WEIGHT: bolder
+}
+.clsInputTextDate {
+	WIDTH: 77px; HEIGHT: 20px; FONT-SIZE: 13px
+}
+.clsTDTitle {
+	BACKGROUND-COLOR: #bdcedd; FONT-FAMILY: Arial; FONT-WEIGHT: bolder
+}
+.clsSmallSelect {
+	WIDTH: 100px; HEIGHT: 20px; FONT-SIZE: 13px
+}
+.clsSmallInputText {
+	WIDTH: 100px; HEIGHT: 20px; FONT-SIZE: 13px
+}
+.HeaderEntityName {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 16px; FONT-WEIGHT: bolder
+}
+.tblFormStatic {
+	BORDER-BOTTOM: #53769b thin solid; BORDER-LEFT: #53769b thin solid; FONT-FAMILY: Arial; FONT-SIZE: 13px; BORDER-TOP: #53769b thin solid; BORDER-RIGHT: #53769b thin solid
+}
+.TextareaDeploy {
+	BOX-SIZING: border-box; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; OVERFLOW-X: hidden; BACKGROUND-COLOR: white; FONT-STYLE: italic; FONT-FAMILY: Arial; COLOR: #173d65; BORDER-TOP: medium none; BORDER-RIGHT: medium none; resize: none
+}
+.clsTableBorder {
+	BORDER-BOTTOM: #173d65 1px solid; BORDER-LEFT: #173d65 1px solid; BORDER-TOP: #173d65 1px solid; BORDER-RIGHT: #173d65 1px solid
+}
+</STYLE>
+    <STYLE>BODY {
+	BACKGROUND-COLOR: #feffff; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsSelectTab {
+	BORDER-BOTTOM: paleturquoise thin inset; BORDER-LEFT: paleturquoise thin inset; BACKGROUND-COLOR: #00608b; FONT-FAMILY: Arial; FONT-SIZE: 11px; BORDER-TOP: paleturquoise thin inset; BORDER-RIGHT: paleturquoise thin inset
+}
+.clsMenuTab {
+	BORDER-BOTTOM: paleturquoise thin; BORDER-LEFT: paleturquoise thin; BACKGROUND-COLOR: #00608b; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 11px; BORDER-TOP: paleturquoise thin; BORDER-RIGHT: paleturquoise thin
+}
+.menulines {
+	BORDER-BOTTOM: midnightblue thin solid; TEXT-ALIGN: right; BORDER-LEFT: midnightblue thin solid; BACKGROUND-COLOR: #0b4a80; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 12px; BORDER-TOP: midnightblue thin solid; FONT-WEIGHT: bolder; BORDER-RIGHT: midnightblue thin solid
+}
+.clsHeaders {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 15px; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+.clsButton {
+	BACKGROUND-COLOR: #53769b; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.TableFrmHeader {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.clsTable {
+	BORDER-BOTTOM: #173d65 thin; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsFrmFooter {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsMessage {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.menutree {
+	BACKGROUND-COLOR: #00608b; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 12px; CURSOR: hand; FONT-WEIGHT: bolder
+}
+.TblHeader {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #173d65; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsSelectedRow {
+	BACKGROUND-COLOR: #fffacd; CURSOR: hand
+}
+.clsFirstRow {
+	BACKGROUND-COLOR: white; CURSOR: hand
+}
+BUTTON {
+	BACKGROUND-COLOR: #53769b; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.clsExplenation {
+	FONT-STYLE: italic; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.SubMenu {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial; BACKGROUND-POSITION: center bottom; COLOR: #173d65; FONT-SIZE: 12px; BORDER-TOP: medium none; CURSOR: hand; FONT-WEIGHT: lighter; BORDER-RIGHT: medium none
+}
+.clsSelectRowMenu {
+	BORDER-BOTTOM: ivory thin; BORDER-LEFT: ivory thin; COLOR: lemonchiffon; FONT-SIZE: 13px; BORDER-TOP: ivory thin; CURSOR: hand; FONT-WEIGHT: lighter; BORDER-RIGHT: ivory thin
+}
+.HeaderEntityName {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.SubHeader {
+	FONT-FAMILY: Arial; COLOR: #2f5c8a; FONT-SIZE: 13px
+}
+.clsRemark {
+	FONT-STYLE: italic; FONT-FAMILY: Arial; COLOR: #e34b00; FONT-SIZE: 13px
+}
+INPUT {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+TEXTAREA {
+	BORDER-BOTTOM: #173d65 1px solid; BORDER-LEFT: #173d65 1px solid; OVERFLOW-X: hidden; BACKGROUND-COLOR: white; WIDTH: 145px; ZOOM: 1; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px; OVERFLOW: visible; BORDER-TOP: #173d65 1px solid; BORDER-RIGHT: #173d65 1px solid
+}
+OPTION {
+	FONT-FAMILY: Arial; FONT-SIZE: 13px
+}
+.clsUnderLine {
+	FONT-FAMILY: Arial; FONT-SIZE: 13px; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+.clsButFix {
+	BORDER-BOTTOM: cornflowerblue thin ridge; BORDER-LEFT: cornflowerblue thin ridge; BACKGROUND-COLOR: #53769b; FONT-FAMILY: Arial; COLOR: snow; FONT-SIZE: 13px; BORDER-TOP: cornflowerblue thin ridge; FONT-WEIGHT: bolder; BORDER-RIGHT: cornflowerblue thin ridge
+}
+.clsGray {
+	FONT-FAMILY: Arial; COLOR: gray; FONT-SIZE: 13px
+}
+SELECT {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsHeaderListReport {
+	BACKGROUND-COLOR: #00608b; COLOR: white; FONT-WEIGHT: bolder
+}
+.DivGrd1 {
+	OVERFLOW: auto
+}
+.clsSelectGif {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right center
+}
+.clsSelectOnLoad {
+	BACKGROUND-COLOR: #53769b; FONT-FAMILY: Arial; FONT-SIZE: 9px; FONT-WEIGHT: lighter
+}
+.clsButtonShow {
+	BORDER-BOTTOM: #00608b; BORDER-LEFT: #00608b; BACKGROUND-COLOR: #53769b; BORDER-TOP: #00608b; BORDER-RIGHT: #00608b
+}
+.clsButtonHide {
+	BORDER-BOTTOM: #00608b; BORDER-LEFT: #00608b; BACKGROUND-COLOR: #53769b; BORDER-TOP: #00608b; BORDER-RIGHT: #00608b
+}
+.ButTop {
+	BORDER-BOTTOM: #173d65; POSITION: relative; BORDER-LEFT: thin; BACKGROUND-COLOR: #173d65; FONT-STYLE: normal; FONT-FAMILY: Arial; VISIBILITY: visible; COLOR: white; CLEAR: right; FONT-SIZE: 9px; BORDER-TOP: #173d65; FONT-WEIGHT: bolder; BORDER-RIGHT: #173d65
+}
+.overMenu {
+	BORDER-BOTTOM: ivory thin solid; BORDER-LEFT: ivory thin solid; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial; BACKGROUND-POSITION: right top; COLOR: palegoldenrod; BORDER-TOP: ivory thin solid; BORDER-RIGHT: ivory thin solid
+}
+.clsSelectOnLoad2 {
+	FONT-FAMILY: Arial; FONT-SIZE: 9px; FONT-WEIGHT: lighter
+}
+.tblFormStatic {
+	BORDER-BOTTOM: #53769b thin solid; BORDER-LEFT: #53769b thin solid; FONT-FAMILY: Arial; FONT-SIZE: 13px; BORDER-TOP: #53769b thin solid; BORDER-RIGHT: #53769b thin solid
+}
+PRE {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsTableBorder {
+	BORDER-BOTTOM: #173d65 1px solid; BORDER-LEFT: #173d65 1px solid; BORDER-TOP: #173d65 1px solid; BORDER-RIGHT: #173d65 1px solid
+}
+.clsMarkFields {
+	BORDER-BOTTOM: #e34b00 1px solid; BORDER-LEFT: #e34b00 1px solid; BACKGROUND-COLOR: #ffb895; BORDER-TOP: #e34b00 1px solid; BORDER-RIGHT: #e34b00 1px solid
+}
+.clsNoneMarkFields {
+	
+}
+.clsPoint {
+	BORDER-BOTTOM: #bdcedd 1px dotted; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+</STYLE>
+<link rel="STYLESHEET" href="../StyleSheet/General.css">
+<link rel="STYLESHEET" href="../StyleSheet/General_Deploy.css">
+
+	
+
+
+</head>
+
+	
+<BODY oncontextmenu=return(false) bgColor=#fdfdf7><TABLE style="WIDTH: 100%" dir=rtl border=0 align=right>
+<TBODY>
+<TR>
+<TD>
+<SCRIPT language=javascript>
+
+function OpenFile(ProofNum, FileNameObj)
+{
+	var URL = new String(document.URLUnencoded);
+	var DomainName = new String(document.domain);
+	var IndexStart = URL.indexOf("/", 7);				
+	var IndexEnd = URL.indexOf("/", IndexStart + 1);
+	var Site = URL.substring(IndexStart + 1, IndexEnd).toLowerCase();
+	var Path = "";
+	
+  if (URL.match(/^file:\/\//i) != null) 
+      Site = "file:"; 
+  
+	switch (Site)
+	{
+		case "internet": 
+			Path = "http://" + DomainName + "/Pages/GetGWFile.aspx?ProofID=" + ProofNum + "&FileName=" + encodeURIComponent(FileNameObj.innerText);		
+			break;
+			
+		case "file:":
+			Path = FileNameObj.localPath;
+			break;
+
+		default:
+			var FileName = FileNameObj.value ? FileNameObj.value.replace(/^\s+/g, "").replace(/\s+$/g, "") : "";
+			Path = (FileName.length > 0) ? ("file://" + FileName) : "";
+			break;
+	}
+	
+	if(Path != "")
+		window.open(Path);
+}
+</SCRIPT>
+
+<DIV style="DISPLAY: none"><SPAN id=HeaderFormSubject FieldAlias="FormSubject">אילה אסתר חפץ</SPAN> <SPAN id=HeaderIsComfort FieldAlias="IsComfort">false</SPAN> </DIV>
+<TABLE style="WIDTH: 100%" dir=rtl class=clsTable border=0 align=center>
+<TBODY>
+<TR>
+<TD style="WIDTH: 23%"></TD>
+<TD style="DISPLAY: none"><SPAN id=EntityTypeCode FieldAlias="KodSugYeshut">1</SPAN> </TD>
+<TD style="WIDTH: 54%" class=HeaderEntityName align=center><SPAN id=HeaderEntityNameEB FieldAlias="ShemYeshutIvrit">בנק אגוד לישראל בע"מ</SPAN> </TD>
+<TD style="WIDTH: 23%" class=clsTable align=right><B><SPAN id=HeaderFormNumber FieldAlias="MisparTofes">ת091</SPAN> </B></TD></TR>
+<TR>
+<TD style="WIDTH: 160px"></TD>
+<TD style="DISPLAY: none"></TD>
+<TD class=HeaderEntityName align=center><SPAN id=HeaderEntityNameEn FieldAlias="ShemYeshutLoazit">UNION BANK OF ISRAEL LTD</SPAN> </TD>
+<TD class=clsTable align=right><B><SPAN id=HeaderPublic FieldAlias="PumbiLoPumbi">פומבי</SPAN> </B></TD></TR>
+<TR>
+<TD></TD>
+<TD style="DISPLAY: none"></TD>
+<TD class=HeaderEntityName align=center></TD>
+<TD></TD></TR>
+<TR>
+<TD style="WIDTH: 160px"></TD>
+<TD style="DISPLAY: none"><SPAN id=HeaderEntityID FieldAlias="MezahehHotem">6778</SPAN> </TD>
+<TD align=center><SPAN id=HeaderSingNumber FieldAlias="">מספר ברשם: </SPAN><SPAN id=HeaderSingNumberD FieldAlias="HeaderMisparBaRasham">520018649</SPAN> </TD>
+<TD></TD></TR>
+<TR>
+<TD></TD>
+<TD align=center><SPAN id=HeaderText FieldAlias="NeyarotErechReshumim">ניירות ערך של התאגיד רשומים למסחר בבורסה בתל-אביב</SPAN> 
+<TD></TD></TD></TR>
+<TR>
+<TD style="WIDTH: 160px"></TD>
+<TD style="DISPLAY: none"><SPAN id=HeaderEntityIdentity FieldAlias="MezahehYeshut">157</SPAN> </TD>
+<TD align=center><SPAN id=HeaderStockSing FieldAlias="">שם מקוצר: </SPAN><SPAN id=HeaderStockSingD FieldAlias="HeaderSemelBursa">אגוד</SPAN> </TD>
+<TD></TD></TR>
+<TR>
+<TD style="WIDTH: 160px"></TD>
+<TD style="DISPLAY: none"><SPAN id=HeaderFormID FieldAlias="MezahehTofes">65</SPAN> </TD>
+<TD align=center><SPAN id=HeaderAddress FieldAlias="">רחוב: </SPAN><SPAN id=HeaderStreet FieldAlias="HeaderRehov">אחוזת בית </SPAN><SPAN id=HeaderHomeNumber FieldAlias="HeaderMisparBait">6-8</SPAN> , <SPAN id=HeaderCity FieldAlias="HeaderYeshuv">תל אביב</SPAN> <SPAN id=HeaderZipCode FieldAlias="HeaderMikud">65143</SPAN> </TD>
+<TD></TD></TR>
+<TR>
+<TD style="WIDTH: 160px"></TD>
+<TD align=center><SPAN id=HeaderPhone FieldAlias="HeaderPhone">טלפון: </SPAN><SPAN id=HeaderPhone1 FieldAlias="HeaderTelephone1">03-5191580</SPAN> , <SPAN id=HeaderPhone2 FieldAlias="HeaderTelephone2">03-5191581</SPAN> , <SPAN id=HeaderFax FieldAlias="">פקס: </SPAN><SPAN id=HeaderFaxD FieldAlias="HeaderFax1">03-5191887</SPAN> </TD>
+<TD></TD></TR>
+<TR>
+<TD style="WIDTH: 160px"></TD>
+<TD align=center><SPAN id=HeaderEmail FieldAlias="">דואר אלקטרוני: </SPAN><SPAN id=HeaderEmailD FieldAlias="HeaderDoarElectroniMedaveach">rachelfr@ubi.co.il</SPAN> </TD>
+<TD class=clsTable align=right><SPAN id=HeaderSendDate FieldAlias="HeaderSendDate">שודר במגנא: </SPAN>24/02/2015 </TD></TR>
+<TR>
+<TD style="WIDTH: 160px"></TD>
+<TD></TD>
+<TD></TD></TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD style="DISPLAY: none" class=clsTable align=right><SPAN id=HeaderSendTime FieldAlias="HeaderSendTime">שעת שידור: </SPAN>13:03 <SPAN id=HeaderSendTimeD FieldAlias="ShaaShidur">13:00:28 </SPAN></TD></TR>
+<TR>
+<TD style="WIDTH: 160px"></TD>
+<TD align=center>
+<TABLE class=clsTable cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD vAlign=top></TD>
+<TD width=5></TD>
+<TD dir=ltr vAlign=top><SPAN id=HeaderCompanyUrlD FieldAlias="CompanyUrl"></SPAN></TD></TR></TBODY></TABLE></TD>
+<TD class=clsTable align=right><SPAN id=HeaderProof FieldAlias="">אסמכתא: </SPAN><SPAN id=HeaderProofValue>2015-01-037558</SPAN> </TD></TR>
+<TR>
+<TD></TD>
+<TD></TD>
+<TD></TD></TR></TBODY></TABLE>
+<TABLE style="WIDTH: 60%" dir=rtl class=TableFrmHeader>
+<TBODY>
+<TR>
+<TD><SPAN id=HeaderFor FieldAlias="">לכבוד </SPAN></TD>
+<TD></TD>
+<TD style="WIDTH: 10px"><SPAN id=HeaderFor2 FieldAlias="">לכבוד </SPAN></TD>
+<TD>&nbsp;</TD>
+<TD></TD>
+<TD></TD></TR>
+<TR>
+<TD><U><SPAN id=HeaderRashot FieldAlias="">רשות ניירות ערך </SPAN></U></TD>
+<TD></TD>
+<TD><U><SPAN id=HeaderToTheStock FieldAlias="">הבורסה לניירות ערך בת"א בע"מ </SPAN></U></TD>
+<TD>&nbsp;</TD>
+<TD></TD>
+<TD></TD></TR>
+<TR>
+<TD><SPAN id=HeaderRashotMail FieldAlias="DoarElectroniRashut">www.isa.gov.il </SPAN></TD>
+<TD></TD>
+<TD style="WIDTH: 10px"><SPAN id=HeaderStockEmail FieldAlias="DoarElectroniBursa">www.tase.co.il </SPAN></TD>
+<TD>&nbsp;</TD>
+<TD><INPUT style="DISPLAY: none" id=HeaderID value=2></TD>
+<TD><INPUT style="DISPLAY: none" id=IsFixReport></TD>
+<TD><INPUT style="DISPLAY: none" id=IsComplementaryReport></TD></TR></TBODY></TABLE><HideDataFromEscortFile></TD></TR>
+<TR>
+<TD style="HEIGHT: 30px"></TD></TR>
+<TR>
+<TD class=clsHeaders align=center><SPAN id=Field1 FieldAlias="Hanadon">דוח מיידי על מינוי נושא משרה בכירה (למעט מינוי דירקטור/ יו"ר דירקטוריון ולמעט יחיד שמונה מטעם תאגיד שהוא דירקטור) </SPAN></TD></TR>
+<TR>
+<TD class=SubHeader align=center><SPAN id=Field2 FieldAlias="">תקנה 34 (ב) לתקנות ניירות ערך (דוחות תקופתיים ומיידיים), תש"ל - 1970 </SPAN></TD></TR>
+<TR>
+<TD class=clsRemark align=center><SPAN id=Field3 FieldAlias="">הסבר: אם ממונה גם כדירקטור או יו"ר דירקטוריון יש למלא טופס ת093 בלבד </SPAN></TD></TR>
+<TR>
+<TD class=clsRemark align=center><SPAN id=NewField1 FieldAlias="">הסבר: בהתאם לתקנה 34 (ד) לתקנות ניירות ערך (דוחות תקופתיים ומיידים) תש"ל - 1970, יש להגיש במקביל להגשת טופס זה מצבת נושאי משרה בכירה במסגרת טופס ת097 </SPAN></TD></TR>
+<TR>
+<TD>
+<TABLE style="WIDTH: 100%; TABLE-LAYOUT: fixed" dir=rtl border=0 align=right>
+<TBODY>
+<TR>
+<TD style="WIDTH: 23px" vAlign=top><SPAN id=NewField2 FieldAlias="">1. </SPAN></TD>
+<TD>
+<TABLE>
+<TBODY>
+<TR>
+<TD vAlign=top><SPAN id=Field4 FieldAlias="">שם משפחה ושם פרטי: </SPAN></TD>
+<TD vAlign=top><EM><TEXTAREA style="WIDTH: 300px; HEIGHT: 22px" id=Field5 class=TextareaDeploy readOnly FieldAlias="Shem">אילה אסתר חפץ</TEXTAREA> </EM></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD></TD>
+<TD>
+<TABLE>
+<TBODY>
+<TR>
+<TD vAlign=top><SPAN id=Field54 FieldAlias="">שם משפחה ושם פרטי באנגלית כפי שמופיע בדרכון: </SPAN></TD>
+<TD vAlign=top><EM><TEXTAREA style="WIDTH: 300px; HEIGHT: 22px" id=Field55 class=TextareaDeploy readOnly FieldAlias="EnglishName">Aiala Esther Hefetz</TEXTAREA> </EM></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD></TD>
+<TD vAlign=top><SPAN id=Field99 FieldAlias="">מין </SPAN><EM><SPAN id=Field100 FieldAlias="Gender">נקבה</SPAN> </EM></TD></TR>
+<TR>
+<TD></TD>
+<TD vAlign=top><SPAN id=Field6 FieldAlias="">סוג מספר זיהוי: </SPAN><EM><SPAN id=Field7 FieldAlias="SugMisparZihuy">מספר ת.ז.</SPAN> </EM></TD></TR>
+<TR>
+<TD></TD>
+<TD><SPAN id=Field8 FieldAlias="">מספר זיהוי: </SPAN><EM><SPAN id=Field9 FieldAlias="MisparZihuy">058251372</SPAN> </EM></TD></TR>
+<TR>
+<TD></TD>
+<TD><SPAN id=Field10 FieldAlias="">אזרחות </SPAN><EM><SPAN id=Field11 FieldAlias="Ezrachut">אדם פרטי עם אזרחות ישראלית</SPAN> </EM></TD></TR>
+<TR>
+<TD></TD>
+<TD><SPAN id=Field12 FieldAlias="">ארץ אזרחות </SPAN><EM><SPAN id=Field13 FieldAlias="EretzEzrachut">_________</SPAN> </EM></TD></TR>
+<TR>
+<TD vAlign=middle><SPAN id=NewField3 FieldAlias="">2. </SPAN></TD>
+<TD>
+<TABLE>
+<TBODY>
+<TR>
+<TD><SPAN id=Field14 FieldAlias="">תאריך לידה: </SPAN><EM><SPAN id=Field15 FieldAlias="TaarichLeida">06/06/1963</SPAN> </EM></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=middle><SPAN id=NewField4 FieldAlias="">3. </SPAN></TD>
+<TD>
+<TABLE>
+<TBODY>
+<TR>
+<TD><SPAN id=Field16 FieldAlias="">מען להמצאת כתבי בית דין: </SPAN></TD>
+<TD><EM><TEXTAREA style="WIDTH: 570px; HEIGHT: 22px" id=Field17 class=TextareaDeploy readOnly FieldAlias="MaanLeHimatzutKitveyBeitDyn">הר אדר, כרמים 27, מיקוד 90836</TEXTAREA> </EM></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=middle><SPAN id=NewField5 FieldAlias="">4. </SPAN></TD>
+<TD><SPAN id=Field18 FieldAlias="">תאריך תחילת הכהונה: </SPAN><EM><SPAN id=Field19 FieldAlias="TaarichTchilatHaKehuna">05/04/2015</SPAN> </EM></TD></TR>
+<TR>
+<TD vAlign=middle><SPAN id=NewField6 FieldAlias="">5. </SPAN></TD>
+<TD><SPAN id=Field20 FieldAlias="">התפקיד לו מונה: </SPAN></TD></TR>
+<TR>
+<TD></TD>
+<TD>
+<TABLE style="WIDTH: 70%; TABLE-LAYOUT: fixed" dir=rtl id=Table1 border=0 align=right XMLType="TABLE">
+<TBODY>
+<TR style="DISPLAY: none" class=tblHeader>
+<TD></TD></TR>
+<TR>
+<TD>
+<TABLE style="WIDTH: 100%" border=1>
+<TBODY>
+<TR class=clsFirstRow vAlign=top>
+<TD style="WIDTH: 35%"><EM><SPAN id=Row0Field21 FieldAlias="HaTafkidLoMuna">אחר</SPAN> </EM></TD>
+<TD style="WIDTH: 65%"><EM><TEXTAREA style="WIDTH: 350px; HEIGHT: 22px" id=Row0Field22 class=TextareaDeploy readOnly FieldAlias="TeurHaTafkidLoMuna">סמנכ"ל, ראש אגף עסקים</TEXTAREA> </EM></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD></TD>
+<TD><SPAN id=Field56 FieldAlias="">אם מונה כמנכ"ל התאגיד, או שהנו קרובו של מנכ"ל התאגיד, האם משמש גם יו"ר הדירקטוריון: </SPAN><EM><SPAN id=Field57 FieldAlias="IsDirectorAndCEO">_________</SPAN> </EM><BR><SPAN id=Field58 FieldAlias="">המינוי אושר באסיפה כללית ביום: </SPAN><EM><SPAN id=Field59 FieldAlias="ApprovalDate">_________</SPAN> </EM></TD></TR>
+<TR>
+<TD vAlign=middle><SPAN id=NewField7 FieldAlias="">6. </SPAN></TD>
+<TD><SPAN id=NewField20 FieldAlias="">תפקיד קודם בחברה טרם המינוי: </SPAN></TD></TR>
+<TR>
+<TD></TD>
+<TD>
+<TABLE style="WIDTH: 70%; TABLE-LAYOUT: fixed" dir=rtl id=Table4 border=0 align=right XMLType="TABLE">
+<TBODY>
+<TR style="DISPLAY: none" class=tblHeader>
+<TD></TD></TR>
+<TR>
+<TD>
+<TABLE style="WIDTH: 100%" border=1>
+<TBODY>
+<TR class=clsFirstRow vAlign=top>
+<TD style="WIDTH: 25%"><EM><SPAN id=Row0NewField21 FieldAlias="TafkidKodem">אין</SPAN> </EM></TD>
+<TD style="WIDTH: 75%"><EM><TEXTAREA style="WIDTH: 300px; HEIGHT: 22px" id=Row0NewField22 class=TextareaDeploy readOnly FieldAlias="TafkidKodemAher">_________</TEXTAREA> </EM></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD><BR><SPAN id=NewField8 FieldAlias="">7. </SPAN></TD>
+<TD vAlign=bottom><SPAN id=Field23 FieldAlias="">השכלה אקדמית: </SPAN></TD></TR>
+<TR>
+<TD></TD>
+<TD>
+<TABLE style="WIDTH: 60%; TABLE-LAYOUT: fixed" dir=rtl id=Table2 border=0 align=right XMLType="TABLE">
+<TBODY>
+<TR class=tblHeader align=center>
+<TD style="WIDTH: 25%"><SPAN id=Row0Field24 FieldAlias="">תואר </SPAN></TD>
+<TD style="WIDTH: 36%"><SPAN id=Row0Field25 FieldAlias="">תחום </SPAN></TD>
+<TD style="WIDTH: 39%"><SPAN id=Row0Field26 FieldAlias="">שם המוסד האקדמי </SPAN></TD></TR>
+<TR>
+<TD colSpan=3>
+<DIV border="1">
+<TABLE style="WIDTH: 100%" id=tblEducation class=clsFirstRow border=1 name="tblEducation">
+<TBODY>
+<TR class=clsFirstRow vAlign=top>
+<TD style="WIDTH: 25%"><EM><SPAN id=Row0Field27 FieldAlias="Toar">בוגר</SPAN> </EM></TD>
+<TD style="WIDTH: 36%"><EM><SPAN id=Row0Field28 FieldAlias="Tchum">BA בכלכלה</SPAN> </EM></TD>
+<TD style="WIDTH: 39%"><EM><TEXTAREA style="WIDTH: 145px; HEIGHT: 38px" id=Row0Field29 class=TextareaDeploy readOnly FieldAlias="ShemHaMosadHaAcademi">Baruch College City University Of NY</TEXTAREA> </EM></TD></TR>
+<TR class=clsFirstRow vAlign=top>
+<TD style="WIDTH: 25%"><EM><SPAN id=Row1Field27 FieldAlias="Toar">בוגר</SPAN> </EM></TD>
+<TD style="WIDTH: 36%"><EM><SPAN id=Row1Field28 FieldAlias="Tchum">MBA במנהל עסקים</SPAN> </EM></TD>
+<TD style="WIDTH: 39%"><EM><TEXTAREA style="WIDTH: 145px; HEIGHT: 38px" id=Row1Field29 class=TextareaDeploy readOnly FieldAlias="ShemHaMosadHaAcademi">האוניברסיטה העברית, ירושלים</TEXTAREA> </EM></TD></TR></TBODY></TABLE></DIV></TD></TR>
+<TR>
+<TD colSpan=3 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD></TD>
+<TD>&nbsp; &nbsp; <SPAN id=Field30 FieldAlias="">השכלה אחרת ותעודות מקצועיות: </SPAN></TD></TR>
+<TR>
+<TD></TD>
+<TD>&nbsp; &nbsp; <EM><TEXTAREA style="WIDTH: 570px; HEIGHT: 22px" id=Field31 class=TextareaDeploy readOnly FieldAlias="HaskalaAcheret">_________</TEXTAREA> </EM></TD></TR>
+<TR>
+<TD><BR><SPAN id=NewField9 FieldAlias="">8. </SPAN></TD>
+<TD vAlign=bottom><SPAN id=Field32 FieldAlias="">עיסוקים עיקריים ב – 5 השנים האחרונות: </SPAN></TD></TR>
+<TR>
+<TD></TD>
+<TD>
+<TABLE style="WIDTH: 90%; TABLE-LAYOUT: fixed" dir=rtl id=Table3 border=0 align=right XMLType="TABLE">
+<TBODY>
+<TR class=tblHeader align=center>
+<TD style="WIDTH: 33%"><SPAN id=Row0Field33 FieldAlias="">התפקיד שמילא </SPAN></TD>
+<TD style="WIDTH: 33%"><SPAN id=Row0Field34 FieldAlias="">מקום העבודה </SPAN></TD>
+<TD style="WIDTH: 34%"><SPAN id=Row0Field35 FieldAlias="">משך הזמן שמילא בתפקיד </SPAN></TD></TR>
+<TR>
+<TD colSpan=3>
+<DIV border="1">
+<TABLE style="WIDTH: 100%; TABLE-LAYOUT: fixed" id=tblEducation class=clsFirstRow border=1 name="tblEducation">
+<TBODY>
+<TR vAlign=top>
+<TD style="WIDTH: 33%"><EM><TEXTAREA style="WIDTH: 200px; HEIGHT: 38px" id=Row0Field36 class=TextareaDeploy readOnly FieldAlias="HaTafkidSheMila">מנהלת מחלקת מכירות וקידום ופיתוח עסקי - אגף מסחרי.</TEXTAREA> </EM></TD>
+<TD style="WIDTH: 33%"><EM><TEXTAREA style="WIDTH: 200px; HEIGHT: 22px" id=Row0Field37 class=TextareaDeploy readOnly FieldAlias="MekomHaAvoda">בנק הפועלים</TEXTAREA> </EM></TD>
+<TD style="WIDTH: 34%"><EM><TEXTAREA style="WIDTH: 200px; HEIGHT: 22px" id=Row0Field38 class=TextareaDeploy readOnly FieldAlias="MeshechZmanSheMilaBaTafkid">12/2008-5/2010</TEXTAREA> </EM></TD></TR>
+<TR vAlign=top>
+<TD style="WIDTH: 33%"><EM><TEXTAREA style="WIDTH: 200px; HEIGHT: 22px" id=Row1Field36 class=TextareaDeploy readOnly FieldAlias="HaTafkidSheMila">מנהלת מרכז עסקים - נגב.</TEXTAREA> </EM></TD>
+<TD style="WIDTH: 33%"><EM><TEXTAREA style="WIDTH: 200px; HEIGHT: 22px" id=Row1Field37 class=TextareaDeploy readOnly FieldAlias="MekomHaAvoda">בנק הפועלים</TEXTAREA> </EM></TD>
+<TD style="WIDTH: 34%"><EM><TEXTAREA style="WIDTH: 200px; HEIGHT: 22px" id=Row1Field38 class=TextareaDeploy readOnly FieldAlias="MeshechZmanSheMilaBaTafkid">6/2010-8/2012</TEXTAREA> </EM></TD></TR>
+<TR vAlign=top>
+<TD style="WIDTH: 33%"><EM><TEXTAREA style="WIDTH: 200px; HEIGHT: 22px" id=Row2Field36 class=TextareaDeploy readOnly FieldAlias="HaTafkidSheMila">מנהלת מרכז עסקים - דרום.</TEXTAREA> </EM></TD>
+<TD style="WIDTH: 33%"><EM><TEXTAREA style="WIDTH: 200px; HEIGHT: 22px" id=Row2Field37 class=TextareaDeploy readOnly FieldAlias="MekomHaAvoda">בנק הפועלים</TEXTAREA> </EM></TD>
+<TD style="WIDTH: 34%"><EM><TEXTAREA style="WIDTH: 200px; HEIGHT: 22px" id=Row2Field38 class=TextareaDeploy readOnly FieldAlias="MeshechZmanSheMilaBaTafkid">9/2012 - 2/2015</TEXTAREA> </EM></TD></TR></TBODY></TABLE></DIV></TD></TR>
+<TR>
+<TD colSpan=3 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD><BR><SPAN id=NewField10 FieldAlias="">9. </SPAN></TD>
+<TD vAlign=bottom><SPAN id=Field39 FieldAlias="">נושא המשרה הבכירה </SPAN><EM><SPAN id=Field40 FieldAlias="NoseMisraBechira1">אינו ממלא</SPAN> </EM><SPAN id=Field41 FieldAlias="">בתפקידים אחרים בתאגיד,בחברת בת שלו, בחברה קשורה או אצל בעל העניין </SPAN></TD></TR>
+<TR>
+<TD></TD>
+<TD class=clsRemark><SPAN id=Field42 FieldAlias="">הסבר: אם הוא ממלא תפקידים אחרים בתאגיד, בחברה בת שלו או אצל בעל עניין בו נא לפרט. </SPAN></TD></TR>
+<TR>
+<TD></TD>
+<TD><EM><TEXTAREA style="WIDTH: 600px; HEIGHT: 22px" id=Field43 class=TextareaDeploy readOnly FieldAlias="Hesber1">_________</TEXTAREA> </EM></TD></TR>
+<TR>
+<TD><BR><SPAN id=NewField11 FieldAlias="">10. </SPAN></TD>
+<TD vAlign=bottom><SPAN id=Field44 FieldAlias="">נושא המשרה הבכירה </SPAN><EM><SPAN id=Field45 FieldAlias="NoseMisraBechira2">אינו</SPAN> </EM><SPAN id=Field46 FieldAlias="">בן משפחה של נושא משרה בכירה אחר או של בעל עניין בתאגיד. </SPAN></TD></TR>
+<TR>
+<TD></TD>
+<TD class=clsRemark><SPAN id=Field47 FieldAlias="">הסבר: אם הוא בן משפחה של נושא משרה בכירה אחר או של בעל עניין בתאגיד, יש לפרט. </SPAN></TD></TR>
+<TR>
+<TD></TD>
+<TD><EM><TEXTAREA style="WIDTH: 600px; HEIGHT: 22px" id=Field48 class=TextareaDeploy readOnly FieldAlias="Hesber2">_________</TEXTAREA> </EM></TD></TR>
+<TR>
+<TD colSpan=2><BR><SPAN id=NewField13 FieldAlias="">11. </SPAN></TD></TR>
+<TR>
+<TD style="PADDING-RIGHT: 15px" vAlign=bottom colSpan=2><SPAN id=Field49 FieldAlias="">א. נושא המשרה הבכירה </SPAN><EM><SPAN id=Field50 FieldAlias="NoseMisraBechira3">אינו מחזיק</SPAN></EM> <SPAN id=Field51 FieldAlias="">בניירות ערך של התאגיד. </SPAN></TD></TR>
+<TR>
+<TD style="PADDING-RIGHT: 15px" colSpan=2><SPAN id=Field60 FieldAlias="">להלן מצבת החזקותיו: </SPAN></TD></TR>
+<TR>
+<TD colSpan=2>
+<TABLE style="WIDTH: 100%" dir=rtl id=Table5 border=0 align=right XMLType="TABLE">
+<TBODY>
+<TR class=tblHeader align=center>
+<TD style="WIDTH: 105px"><SPAN id=Row0Field61 FieldAlias="">שם, סוג וסדרה של נייר הערך </SPAN></TD>
+<TD style="WIDTH: 110px"><SPAN id=Row0Field63 FieldAlias="">מספר ני"ע בבורסה </SPAN></TD>
+<TD style="WIDTH: 100px"><SPAN id=Row0Field65 FieldAlias="">כמות ניירות ערך </SPAN></TD>
+<TD style="WIDTH: 65px"><SPAN id=Row0Field67 FieldAlias="">רדומות </SPAN></TD>
+<TD style="WIDTH: 160px"><SPAN id=Row0Field69 FieldAlias="">שיעור החזקה </SPAN>
+<TABLE style="WIDTH: 100%" class=tblHeader>
+<TBODY>
+<TR>
+<TD style="WIDTH: 50%"><SPAN id=Row0Field70 FieldAlias="">הון </SPAN></TD>
+<TD style="WIDTH: 50%"><SPAN id=Row0Field72 FieldAlias="">הצבעה </SPAN></TD></TR></TBODY></TABLE></TD>
+<TD style="WIDTH: 160px"><SPAN id=Row0Field74 FieldAlias="">שיעור החזקה (דילול מלא) </SPAN>
+<TABLE style="WIDTH: 100%" class=tblHeader>
+<TBODY>
+<TR>
+<TD style="WIDTH: 50%"><SPAN id=Row0Field75 FieldAlias="">הון </SPAN></TD>
+<TD style="WIDTH: 50%"><SPAN id=Row0Field77 FieldAlias="">הצבעה </SPAN></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD colSpan=6>
+<DIV border="1">
+<TABLE style="WIDTH: 100%" id=tblNames1 border=1 name="tblNames1">
+<TBODY>
+<TR class=clsFirstRow vAlign=top>
+<TD style="WIDTH: 105px"><EM><TEXTAREA style="WIDTH: 100px; HEIGHT: 22px" id=Row0Field62 class=TextareaDeploy readOnly FieldAlias="ShemSogNyar">_________</TEXTAREA></EM> </TD>
+<TD style="WIDTH: 110px"><EM><SPAN dir=ltr id=Row0Field64 FieldAlias="MisparNyarBbursa">_________</SPAN></EM> </TD>
+<TD style="WIDTH: 100px"><EM><SPAN dir=ltr id=Row0Field66 FieldAlias="KamutNyar2">_________</SPAN></EM> </TD>
+<TD style="WIDTH: 65px"><EM><SPAN id=Row0Field68 FieldAlias="Rdomot">_________</SPAN></EM> </TD>
+<TD style="WIDTH: 160px">
+<TABLE style="WIDTH: 100%" border=1>
+<TBODY>
+<TR>
+<TD style="WIDTH: 50%"><EM><SPAN dir=ltr id=Row0Field71 FieldAlias="Hon1">_________</SPAN></EM> </TD>
+<TD style="WIDTH: 50%"><EM><SPAN dir=ltr id=Row0Field73 FieldAlias="Hsba1">_________</SPAN></EM> </TD></TR></TBODY></TABLE></TD>
+<TD style="WIDTH: 160px">
+<TABLE style="WIDTH: 100%" border=1>
+<TBODY>
+<TR>
+<TD style="WIDTH: 50%"><EM><SPAN dir=ltr id=Row0Field76 FieldAlias="Hon2">_________</SPAN></EM> </TD>
+<TD style="WIDTH: 50%"><EM><SPAN dir=ltr id=Row0Field78 FieldAlias="Hsba2">_________</SPAN></EM> </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></TD></TR>
+<TR>
+<TD colSpan=6 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD style="PADDING-RIGHT: 15px" colSpan=2><SPAN id=Field79 FieldAlias="">ב. נושא המשרה הבכירה </SPAN><EM><SPAN id=Field80 FieldAlias="NoseMisraBechira4">אינו מחזיק</SPAN></EM> <SPAN id=Field81 FieldAlias="">בניירות הערך של חברה בת או חברה קשורה של התאגיד. </SPAN></TD></TR>
+<TR>
+<TD style="PADDING-RIGHT: 15px" colSpan=2><EM><TEXTAREA style="WIDTH: 650px; HEIGHT: 22px" id=Field82 class=TextareaDeploy readOnly FieldAlias="Hesber4">_________</TEXTAREA></EM> </TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD style="HEIGHT: 30px"></TD></TR>
+<TR>
+<TD></HideDataFromEscortFile><LINK rel=STYLESHEET href="../StyleSheet/General.css">
+<TABLE style="WIDTH: 100%" dir=rtl class=clsTable align=center>
+<TBODY>
+<TR>
+<TD class=TableFrmHeader><EM><TEXTAREA style="WIDTH: 695px; HEIGHT: 102px" id=TextHofshi class=TextareaDeploy readOnly FieldAlias="TextHofshi">המינוי המפורט לעיל הינו בכפוף לכך שהמפקח על הבנקים לא יודיע על התנגדותו למינוי או יודיע על הסכמתו לכך.
+דיווח מיידי על מצבת עדכנית של נושאי המשרה הבכירה בתאגיד יפורסם במועד תחילת כהונתה בפועל של הגב' אילה חפץ, כמפורט לעיל.
+
+שמות החותמים בשם התאגיד:
+מר חמי מורג, סמנכ"ל בכיר, ראש אגף משאבים
+עו"ד עירית מקוב, מזכירת הבנק</TEXTAREA> </EM></TD></TR>
+<TR>
+<TD class=clsTable><SPAN id=FooterFroopNumberT FieldAlias="">מספרי אסמכתאות של מסמכים קודמים בנושא (אין האזכור מהווה הכללה על דרך הפניה): </SPAN></TD></TR>
+<TR>
+<TD><FONT class=clsTable color=black size=2 face=ariel><EM><B><SPAN dir=ltr id=FooterProofNum1 FieldAlias="FooterMisparAsmachta1"></SPAN>&nbsp;&nbsp;&nbsp; <SPAN dir=ltr id=FooterProofNum2 FieldAlias="FooterMisparAsmachta2"></SPAN>&nbsp;&nbsp;&nbsp; <SPAN dir=ltr id=FooterProofNum3 FieldAlias="FooterMisparAsmachta3"></SPAN></B></EM></FONT></TD></TR>
+<TR>
+<TD><SPAN id=FooterPrevNameAll FieldAlias="">שמות קודמים של ישות מדווחת: </SPAN><SPAN id=FooterPrevNameD FieldAlias="ShemYeshutKodem"></SPAN></TD></TR>
+<TR align=left>
+<TD><SPAN id=FooterDateUpdate FieldAlias="">תאריך עדכון מבנה הטופס: </SPAN><SPAN id=FooterDateUpdateD FieldAlias="TaarichIdkunMivne">12/01/2015</SPAN> </TD></TR>
+<TR>
+<TD>
+<HR>
+</TD></TR>
+<TR>
+<TD><SPAN id=FooterSignatoryName FieldAlias="">שם מדווח אלקטרוני: </SPAN><SPAN id=FooterSignatoryNameD FieldAlias="FooterShemMedaveach">מקוב ירושלמי עירית רחל</SPAN> , <SPAN id=FooterSignatoryJob FieldAlias="">תפקידו: </SPAN><SPAN id=FooterSignatoryJobD FieldAlias="TafkidBaTaagid">מזכיר הבנק</SPAN> , <SPAN id=FooterEmployCompany FieldAlias="">שם חברה מעסיקה: </SPAN><SPAN id=FooterCompanyNameD FieldAlias="FooterShemHevra"></SPAN>. </TD></TR>
+<TR>
+<TD><SPAN id=FooterAddress FieldAlias="Street">אחוזת בית</SPAN> <SPAN id=FooterStreetNumber FieldAlias="StreetNumber">6-8</SPAN> <SPAN id=FooterCity FieldAlias="City">תל אביב</SPAN> <SPAN id=FooterZipCode FieldAlias="ZipCode">65143</SPAN> , <SPAN id=FooterPhone FieldAlias="">טלפון: </SPAN><SPAN id=FooterPhoneD FieldAlias="Telephone">03-5191586</SPAN> , <SPAN id=FooterFax FieldAlias="">פקס: </SPAN><SPAN id=FooterFaxD FieldAlias="FooterFax1">03-5191877</SPAN> , <SPAN id=FooterEmail FieldAlias="">דואר אלקטרוני: </SPAN><SPAN id=FooterEmailD FieldAlias="FooterDoarElectroniMedaveach">irit-m@ubi.co.il</SPAN> <SPAN style="DISPLAY: none"><SPAN id=FooterYaelD FieldAlias="FooterYael">1</SPAN> </SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></BODY>
+</html>

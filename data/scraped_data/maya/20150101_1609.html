@@ -1,0 +1,807 @@
+﻿<html xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+
+<script type="text/javascript">
+<!--
+window["_tsbp_"] = { ba : "X-TS-BP-Action", bh : "X-TS-AJAX-Request"};
+//-->
+</script>
+<script type="text/javascript" src="/TSbd/08a2325c7eab20000b2f7f8836f0e63cf53e505295899c3c78ae54d5874598738227a6894969731d?type=2"></script>
+<script type="text/javascript" src="../../scripts/utils.js"></script>
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1255">
+    <STYLE>BODY {
+	BACKGROUND-COLOR: #feffff; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px; FONT-WEIGHT: bolder
+}
+.clsTable {
+	BORDER-BOTTOM: #173d65 thin; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsMessage {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px; FONT-WEIGHT: bolder
+}
+.TblHeader {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #173d65; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bolder
+}
+TABLE {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+BUTTON {
+	BACKGROUND-COLOR: #53769b; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bolder
+}
+.clsSelectRowMenu {
+	BORDER-BOTTOM: moccasin thin inset; BORDER-LEFT: moccasin thin inset; BACKGROUND-COLOR: #4682b4; COLOR: lightyellow; FONT-SIZE: 13px; BORDER-TOP: moccasin thin inset; CURSOR: hand; FONT-WEIGHT: bolder; BORDER-RIGHT: moccasin thin inset
+}
+.TblDetail {
+	BACKGROUND-COLOR: antiquewhite
+}
+.clsHeader {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 15px; FONT-WEIGHT: bolder
+}
+.clsHeaders {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 15px; FONT-WEIGHT: bolder; TEXT-DECORATION: underline
+}
+.clsTableDetails {
+	BACKGROUND-COLOR: #bdcedd
+}
+.clsBut {
+	BACKGROUND-COLOR: #53769b; WIDTH: 70px; FONT-FAMILY: Arial; HEIGHT: 20px; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bolder
+}
+.clsSelectedSearch {
+	COLOR: #d4a302; FONT-WEIGHT: bolder
+}
+.clsSelect {
+	WIDTH: 165px; HEIGHT: 20px; FONT-SIZE: 13px
+}
+.clsDisabledText {
+	BACKGROUND-COLOR: #bdcedd; WIDTH: 165px
+}
+.clsInputText {
+	WIDTH: 165px; HEIGHT: 20px; FONT-SIZE: 13px
+}
+.clsWinButton {
+	BACKGROUND-COLOR: #53769b; WIDTH: 25px; HEIGHT: 20px; COLOR: white; FONT-WEIGHT: bolder
+}
+.clsInputTextDate {
+	WIDTH: 77px; HEIGHT: 20px; FONT-SIZE: 13px
+}
+.clsTDTitle {
+	BACKGROUND-COLOR: #bdcedd; FONT-FAMILY: Arial; FONT-WEIGHT: bolder
+}
+.clsSmallSelect {
+	WIDTH: 100px; HEIGHT: 20px; FONT-SIZE: 13px
+}
+.clsSmallInputText {
+	WIDTH: 100px; HEIGHT: 20px; FONT-SIZE: 13px
+}
+.HeaderEntityName {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 16px; FONT-WEIGHT: bolder
+}
+.tblFormStatic {
+	BORDER-BOTTOM: #53769b thin solid; BORDER-LEFT: #53769b thin solid; FONT-FAMILY: Arial; FONT-SIZE: 13px; BORDER-TOP: #53769b thin solid; BORDER-RIGHT: #53769b thin solid
+}
+.TextareaDeploy {
+	BOX-SIZING: border-box; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; OVERFLOW-X: hidden; BACKGROUND-COLOR: white; FONT-STYLE: italic; FONT-FAMILY: Arial; COLOR: #173d65; BORDER-TOP: medium none; BORDER-RIGHT: medium none; resize: none
+}
+.clsTableBorder {
+	BORDER-BOTTOM: #173d65 1px solid; BORDER-LEFT: #173d65 1px solid; BORDER-TOP: #173d65 1px solid; BORDER-RIGHT: #173d65 1px solid
+}
+</STYLE>
+    <STYLE>BODY {
+	BACKGROUND-COLOR: #feffff; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsSelectTab {
+	BORDER-BOTTOM: paleturquoise thin inset; BORDER-LEFT: paleturquoise thin inset; BACKGROUND-COLOR: #00608b; FONT-FAMILY: Arial; FONT-SIZE: 11px; BORDER-TOP: paleturquoise thin inset; BORDER-RIGHT: paleturquoise thin inset
+}
+.clsMenuTab {
+	BORDER-BOTTOM: paleturquoise thin; BORDER-LEFT: paleturquoise thin; BACKGROUND-COLOR: #00608b; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 11px; BORDER-TOP: paleturquoise thin; BORDER-RIGHT: paleturquoise thin
+}
+.menulines {
+	BORDER-BOTTOM: midnightblue thin solid; TEXT-ALIGN: right; BORDER-LEFT: midnightblue thin solid; BACKGROUND-COLOR: #0b4a80; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 12px; BORDER-TOP: midnightblue thin solid; FONT-WEIGHT: bolder; BORDER-RIGHT: midnightblue thin solid
+}
+.clsHeaders {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 15px; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+.clsButton {
+	BACKGROUND-COLOR: #53769b; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.TableFrmHeader {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.clsTable {
+	BORDER-BOTTOM: #173d65 thin; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsFrmFooter {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsMessage {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.menutree {
+	BACKGROUND-COLOR: #00608b; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 12px; CURSOR: hand; FONT-WEIGHT: bolder
+}
+.TblHeader {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #173d65; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsSelectedRow {
+	BACKGROUND-COLOR: #fffacd; CURSOR: hand
+}
+.clsFirstRow {
+	BACKGROUND-COLOR: white; CURSOR: hand
+}
+BUTTON {
+	BACKGROUND-COLOR: #53769b; FONT-FAMILY: Arial; COLOR: white; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.clsExplenation {
+	FONT-STYLE: italic; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.SubMenu {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial; BACKGROUND-POSITION: center bottom; COLOR: #173d65; FONT-SIZE: 12px; BORDER-TOP: medium none; CURSOR: hand; FONT-WEIGHT: lighter; BORDER-RIGHT: medium none
+}
+.clsSelectRowMenu {
+	BORDER-BOTTOM: ivory thin; BORDER-LEFT: ivory thin; COLOR: lemonchiffon; FONT-SIZE: 13px; BORDER-TOP: ivory thin; CURSOR: hand; FONT-WEIGHT: lighter; BORDER-RIGHT: ivory thin
+}
+.HeaderEntityName {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.SubHeader {
+	FONT-FAMILY: Arial; COLOR: #2f5c8a; FONT-SIZE: 13px
+}
+.clsRemark {
+	FONT-STYLE: italic; FONT-FAMILY: Arial; COLOR: #e34b00; FONT-SIZE: 13px
+}
+INPUT {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+TEXTAREA {
+	BORDER-BOTTOM: #173d65 1px solid; BORDER-LEFT: #173d65 1px solid; OVERFLOW-X: hidden; BACKGROUND-COLOR: white; WIDTH: 145px; ZOOM: 1; FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px; OVERFLOW: visible; BORDER-TOP: #173d65 1px solid; BORDER-RIGHT: #173d65 1px solid
+}
+OPTION {
+	FONT-FAMILY: Arial; FONT-SIZE: 13px
+}
+.clsUnderLine {
+	FONT-FAMILY: Arial; FONT-SIZE: 13px; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+.clsButFix {
+	BORDER-BOTTOM: cornflowerblue thin ridge; BORDER-LEFT: cornflowerblue thin ridge; BACKGROUND-COLOR: #53769b; FONT-FAMILY: Arial; COLOR: snow; FONT-SIZE: 13px; BORDER-TOP: cornflowerblue thin ridge; FONT-WEIGHT: bolder; BORDER-RIGHT: cornflowerblue thin ridge
+}
+.clsGray {
+	FONT-FAMILY: Arial; COLOR: gray; FONT-SIZE: 13px
+}
+SELECT {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsHeaderListReport {
+	BACKGROUND-COLOR: #00608b; COLOR: white; FONT-WEIGHT: bolder
+}
+.DivGrd1 {
+	OVERFLOW: auto
+}
+.clsSelectGif {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right center
+}
+.clsSelectOnLoad {
+	BACKGROUND-COLOR: #53769b; FONT-FAMILY: Arial; FONT-SIZE: 9px; FONT-WEIGHT: lighter
+}
+.clsButtonShow {
+	BORDER-BOTTOM: #00608b; BORDER-LEFT: #00608b; BACKGROUND-COLOR: #53769b; BORDER-TOP: #00608b; BORDER-RIGHT: #00608b
+}
+.clsButtonHide {
+	BORDER-BOTTOM: #00608b; BORDER-LEFT: #00608b; BACKGROUND-COLOR: #53769b; BORDER-TOP: #00608b; BORDER-RIGHT: #00608b
+}
+.ButTop {
+	BORDER-BOTTOM: #173d65; POSITION: relative; BORDER-LEFT: thin; BACKGROUND-COLOR: #173d65; FONT-STYLE: normal; FONT-FAMILY: Arial; VISIBILITY: visible; COLOR: white; CLEAR: right; FONT-SIZE: 9px; BORDER-TOP: #173d65; FONT-WEIGHT: bolder; BORDER-RIGHT: #173d65
+}
+.overMenu {
+	BORDER-BOTTOM: ivory thin solid; BORDER-LEFT: ivory thin solid; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial; BACKGROUND-POSITION: right top; COLOR: palegoldenrod; BORDER-TOP: ivory thin solid; BORDER-RIGHT: ivory thin solid
+}
+.clsSelectOnLoad2 {
+	FONT-FAMILY: Arial; FONT-SIZE: 9px; FONT-WEIGHT: lighter
+}
+.tblFormStatic {
+	BORDER-BOTTOM: #53769b thin solid; BORDER-LEFT: #53769b thin solid; FONT-FAMILY: Arial; FONT-SIZE: 13px; BORDER-TOP: #53769b thin solid; BORDER-RIGHT: #53769b thin solid
+}
+PRE {
+	FONT-FAMILY: Arial; COLOR: #173d65; FONT-SIZE: 13px
+}
+.clsTableBorder {
+	BORDER-BOTTOM: #173d65 1px solid; BORDER-LEFT: #173d65 1px solid; BORDER-TOP: #173d65 1px solid; BORDER-RIGHT: #173d65 1px solid
+}
+.clsMarkFields {
+	BORDER-BOTTOM: #e34b00 1px solid; BORDER-LEFT: #e34b00 1px solid; BACKGROUND-COLOR: #ffb895; BORDER-TOP: #e34b00 1px solid; BORDER-RIGHT: #e34b00 1px solid
+}
+.clsNoneMarkFields {
+	
+}
+.clsPoint {
+	BORDER-BOTTOM: #bdcedd 1px dotted; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+</STYLE>
+    <title></title>
+    <link rel="STYLESHEET" href="../StyleSheet/General.css">
+    <link rel="STYLESHEET" href="../StyleSheet/General_Deploy.css">
+    
+
+    
+
+</head>
+  
+	<body oncontextmenu="return(false)" bgcolor="#FFFFFF">
+    
+    <table border="0" dir="rtl" align="right" style="width:100%">
+    <tr>
+      <td>
+        
+	
+			<SCRIPT LANGUAGE=javascript>
+
+function OpenFile(ProofNum, FileNameObj)
+{
+	var URL = new String(document.URLUnencoded);
+	var DomainName = new String(document.domain);
+	var IndexStart = URL.indexOf("/", 7);				
+	var IndexEnd = URL.indexOf("/", IndexStart + 1);
+	var Site = URL.substring(IndexStart + 1, IndexEnd).toLowerCase();
+	var Path = "";
+	
+  if (URL.match(/^file:\/\//i) != null) 
+      Site = "file:"; 
+  
+	switch (Site)
+	{
+		case "internet": 
+			Path = "http://" + DomainName + "/Pages/GetGWFile.aspx?ProofID=" + ProofNum + "&FileName=" + encodeURIComponent(FileNameObj.innerText);		
+			break;
+			
+		case "file:":
+			Path = FileNameObj.localPath;
+			break;
+
+		default:
+			var FileName = FileNameObj.value ? FileNameObj.value.replace(/^\s+/g, "").replace(/\s+$/g, "") : "";
+			Path = (FileName.length > 0) ? ("file://" + FileName) : "";
+			break;
+	}
+	
+	if(Path != "")
+		window.open(Path);
+}
+</script>
+	
+
+<div style="display:none">
+	
+			<span id="HeaderFormSubject" FieldAlias="FormSubject">מינוי סמנכ"ל לקוחות</span>
+		
+
+  
+			<span id="HeaderIsComfort" FieldAlias="IsComfort">false</span>
+		
+</div>
+
+
+
+
+<table class="clsTable" dir="rtl" align="center" style="width:100%" border="0">
+		<tr>
+			<td style="width:23%"></td>	
+			<td style="display:none">
+			<span id="EntityTypeCode" FieldAlias="KodSugYeshut">1</span>
+			</td>
+			<td class="HeaderEntityName" align="center" style="width:54%">
+			<span id="HeaderEntityNameEB" FieldAlias="ShemYeshutIvrit">חברת החשמל לישראל בע"מ</span>
+			</td>
+			<td align="right" class="clsTable" style="width:23%">
+			<b>
+			<span id="HeaderFormNumber" FieldAlias="MisparTofes">ת121</span>
+			</b>				
+			</td>
+			
+		</tr>
+		<tr>
+			<td style="width:160px">
+				
+			</td>	
+			<td style="display:none"></td>
+			<td class="HeaderEntityName" align="center">
+			<span id="HeaderEntityNameEn" FieldAlias="ShemYeshutLoazit">ISRAEL ELECTRIC CORPORATION LTD</span>
+			</td>
+			
+			<td align="right" class="clsTable">
+			<b>
+			<span id="HeaderPublic" FieldAlias="PumbiLoPumbi">פומבי</span>
+			</b>				
+			</td>
+			
+		</tr>
+    
+    <tr>
+      <td></td>
+      <td style="display:none"></td>
+			<td class="HeaderEntityName" align="center">
+				        
+        
+                
+			</td>
+      <td></td>
+    </tr>  
+    
+		<tr>
+			<td style="width:160px"></td>	
+			<td style="display:none">
+			<span id="HeaderEntityID" FieldAlias="MezahehHotem">9916</span>
+					
+			</td>
+				<td align="center">
+				
+					<span id="HeaderSingNumber" FieldAlias="">מספר ברשם: </span>
+					
+							
+					<span id="HeaderSingNumberD" FieldAlias="HeaderMisparBaRasham">520000472</span>
+				</td>
+				<td>				
+				</td>
+
+		</tr>
+			<tr>
+			<td></td>
+				
+			<td align="center">
+			<span id="HeaderText" FieldAlias="NeyarotErechReshumim">ניירות ערך של התאגיד רשומים למסחר בבורסה בתל-אביב</span>
+						<td></td>	
+			</td>
+			
+
+		</tr>
+		
+		<tr>
+			<td style="width:160px;"></td>	
+
+			<td style="display:none">
+			<span id="HeaderEntityIdentity" FieldAlias="MezahehYeshut">288</span>
+					
+			</td>
+											
+			<td align="center">
+			<span id="HeaderStockSing" FieldAlias="">שם מקוצר: </span>
+							
+			<span id="HeaderStockSingD" FieldAlias="HeaderSemelBursa">חשמל</span>
+						
+			</td>
+			<td>
+			</td>
+			
+
+			</tr>
+		<tr>
+			<td style="width:160px"></td>	
+
+			<td style="display:none"><span id="HeaderFormID" FieldAlias="MezahehTofes">75</span>
+			</td>
+
+			<td align="center">
+							<span id="HeaderAddress" FieldAlias="">רחוב: </span>
+							<span id="HeaderStreet" FieldAlias="HeaderRehov">נתיב האור 1 </span>
+							
+			
+							<span id="HeaderHomeNumber" FieldAlias="HeaderMisparBait">ת"ד10</span>
+							,	
+								
+							<span id="HeaderCity" FieldAlias="HeaderYeshuv">חיפה</span>
+								
+							
+							<span id="HeaderZipCode" FieldAlias="HeaderMikud">3100001</span>
+												
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="width:160px"></td>	
+
+			<td align="center">
+							<span id="HeaderPhone" FieldAlias="HeaderPhone">טלפון: </span>
+														
+								
+							<span id="HeaderPhone1" FieldAlias="HeaderTelephone1">04-8184700</span>
+							, 
+							
+						<span id="HeaderPhone2" FieldAlias="HeaderTelephone2"></span>
+							
+												
+						,
+							
+							<span id="HeaderFax" FieldAlias="">פקס: </span>
+						
+				
+							<span id="HeaderFaxD" FieldAlias="HeaderFax1">04-8184710</span>
+										
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="width:160px"></td>	
+
+			<td align="center">
+							<span id="HeaderEmail" FieldAlias="">דואר אלקטרוני: </span>
+						
+								
+							<span id="HeaderEmailD" FieldAlias="HeaderDoarElectroniMedaveach">UB71F@IEC.CO.IL</span>
+			</td>
+			<td class="clsTable" align="right">
+				<span id="HeaderSendDate" FieldAlias="HeaderSendDate">שודר במגנא: </span>
+				01/01/2015	
+			</td>
+			</tr>
+			<tr>
+				<td style="width:160px"></td>	
+				<td></td>	
+
+			<td>			
+										
+					</td>
+			</tr>		
+		
+		<tr>
+		<td></td>
+		<td></td>
+			<td class="clsTable" align="right" style="display:none">
+						<span id="HeaderSendTime" FieldAlias="HeaderSendTime">שעת שידור: </span>
+					
+							15:46
+							<span id="HeaderSendTimeD" FieldAlias="ShaaShidur">15:41:12 </span>
+																
+			</td>
+			
+		</tr>
+		<tr>
+			<td style="width:160px"></td>
+			<td align="center">
+				<table class="clsTable" cellspacing="0" cellpadding="0">
+					<tr>
+						<td valign="top">
+						<span id="HeaderCompanyUrl" FieldAlias="">אתר החברה: </span>
+						</td>
+						<td width="5"></td>
+						<td valign="top" dir="ltr">
+						<span id="HeaderCompanyUrlD" FieldAlias="CompanyUrl">www.iec.co.il</span>
+						</td>
+					</tr>
+				</table>					
+			</td>
+			<td class="clsTable" align="right">
+						<span id="HeaderProof" FieldAlias="">אסמכתא: </span>
+							
+						<span id="HeaderProofValue">2015-01-001540</span>
+			
+				</td>
+			</tr>											
+			<tr>
+			<td></td>
+			<td></td>
+
+				<td>											
+					
+
+			</td>
+			
+		</tr>
+		</table>
+		<table dir="rtl" class="TableFrmHeader" style="width:60%">
+		<tr>			
+			<td>
+							<span id="HeaderFor" FieldAlias="">לכבוד </span>
+															
+			</td>
+			<td></td>
+			
+						
+			<td style="width:10">
+							<span id="HeaderFor2" FieldAlias="">לכבוד </span>
+															
+
+			</td>
+			
+				
+			<td>
+			&nbsp</td>
+			
+			
+			
+
+			<td></td>
+
+			<td></td>			
+		</tr>
+		<tr>
+					<td><u>
+							<span id="HeaderRashot" FieldAlias="">רשות ניירות ערך </span>
+							</u>
+								
+
+			</td>
+			<td></td>
+			
+			
+			<td><u>
+							<span id="HeaderToTheStock" FieldAlias="">הבורסה לניירות ערך בת"א בע"מ </span>
+							</u>
+							
+			</td>
+			
+				
+			<td>
+			&nbsp</td>
+			
+			
+
+			<td></td>
+
+			<td>
+							
+			</td>
+		</tr>
+		<tr>
+			<td>							
+			<span id="HeaderRashotMail" FieldAlias="DoarElectroniRashut">www.isa.gov.il </span>
+								
+
+			</td>
+			<td></td>
+			
+			
+			
+
+			<td style="width:10">
+							<span id="HeaderStockEmail" FieldAlias="DoarElectroniBursa">www.tase.co.il </span>
+						
+			</td>
+			
+				
+			<td>
+			&nbsp</td>
+			
+			
+
+			<td>
+							<input type="text" id="HeaderID" value="2" style="display:none"/></td>
+			<td>
+							<input type="text" id="IsFixReport"  style="display:none"/></td>
+			
+			<td>
+							<input type="text" id="IsComplementaryReport"  style="display:none"/></td>
+				
+
+		</tr>
+		</table>
+		
+		
+
+
+		
+
+
+
+		
+
+
+								<HideDataFromEscortFile>
+
+
+
+    
+
+      </td>
+    </tr>
+    <tr>        
+      <td style="Height:30"></td>
+    </tr>
+    <tr>
+      <td align="center" class="clsHeaders">
+        <span id="Field1" FieldAlias="Hanadon">דוח מיידי </span>
+      </td>
+    </tr>
+    <tr>
+      <td class="SubHeader" align="center">
+        <span id="Field2" FieldAlias="">הסבר: אין להשתמש בטופס זה כאשר קיים טופס מותאם לארוע המדווח </span>
+      </td>
+    </tr>
+    <tr>
+      <td class="clsRemark" align="center">
+        <span id="Field121" FieldAlias="">תוצאות הנפקה יש לדווח בת20 ולא בטופס זה. </span>
+      </td>
+    </tr>
+    <tr>
+      <td class="clsRemark" align="center">
+        <span id="Field14" FieldAlias="">דיווח על דירוג אגרות חוב או דירוג תאגיד יש להגיש באמצעות טופס ת125 </span>
+      </td>
+    </tr>
+    <tr>
+      <td class="SubHeader" align="center">
+        <span id="Field7" FieldAlias="">מהות האירוע: </span>			
+			  
+            <span id="Field8" FieldAlias="ReportSubject">מינוי סמנכ"ל לקוחות</span>
+          
+      </td>
+    </tr>
+    <tr>
+      <td style="height:30px">        
+      </td>
+    </tr>	
+    <tr>			
+      <td>
+        <table border="0" dir="rtl" style="width:100%" align="right">
+          <tr>
+            <td>
+              
+                  <em>
+                    <textarea id="Field3" FieldAlias="LeloShem" class="TextareaDeploy" style="width:650px" readonly>בהמשך לדיווח מיידי מהיום, 1 בינואר 2015, אודות נושא משרה בכירה, מר יעקב חאין, שחדל לכהן בתפקידו (מס' אסמכתא: 2015-01-001486), חברת החשמל לישראל בע"מ מודיעה כי מר יצחק בלמס מונה לתפקיד סמנכ"ל לקוחות, במקום תפקידו כסמנכ"ל ייצור ואנרגיה.
+
+
+חברת החשמל לישראל בע"מ
+ע"י:
+אלי גליקמן, מנכ"ל
+תמיר פוליקר, סמנכ"ל כספים וכלכלה</textarea>
+                  </em>
+                	
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span id="Field4" FieldAlias="">מצורף קובץ </span>
+              
+                  <em>
+                    <span id="Field5" FieldAlias="MetzorafKovetz">_________</span>
+                  </em>
+                	
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <br>
+              <span id="Field9" FieldAlias="">המועד בו נודע לתאגיד לראשונה על הארוע: </span>
+              
+              
+                  <em>
+                    <span id="Field10" FieldAlias="Taarich">01/01/2015</span>
+                  </em>
+                	
+              
+              <span id="Field12" FieldAlias="">בשעה: </span>
+              
+                  <em>
+                    <span id="Field11" FieldAlias="Shaa">15:00</span>
+                  </em>
+                	
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+              
+    
+    
+    <tr>
+      <td style="Height:30"></td>
+    </tr>
+    <tr>
+      <td>
+        
+          </HideDataFromEscortFile>
+          
+          <link rel="STYLESHEET" href="../StyleSheet/General.css">
+          
+              <table class="clsTable" dir="rtl" align="center" style="width:100%">
+                <tr>
+                  <td class="TableFrmHeader">
+                    <em>
+                      <textarea id="TextHofshi" FieldAlias="TextHofshi" class="TextareaDeploy" style="width:695px" readonly> </textarea>
+                    </em>
+                  </td>
+                </tr>                
+                <tr>
+                  <td class="clsTable">
+                    <span id="FooterFroopNumberT" FieldAlias="">מספרי אסמכתאות של מסמכים קודמים בנושא (אין האזכור מהווה הכללה על דרך הפניה): </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <font face="ariel" size="2" color="black" class="clsTable">
+                      <em><b>
+                        
+                        
+                        
+                                        
+                            <span id="FooterProofNum1" FieldAlias="FooterMisparAsmachta1" dir="ltr"> </span>
+                          
+                        
+                        &nbsp;&nbsp;&nbsp;	
+                                                
+                        
+                        
+                        
+                                        
+                            <span id="FooterProofNum2" FieldAlias="FooterMisparAsmachta2" dir="ltr"> </span>
+                          
+                        
+                        &nbsp;&nbsp;&nbsp;                        
+                        
+                        
+                        
+                        
+                                        
+                            <span id="FooterProofNum3" FieldAlias="FooterMisparAsmachta3" dir="ltr"> </span>
+                          
+                      </b></em>
+                    </font>				
+                  </td>
+                </tr>
+                <tr>
+                  <td>                    
+                    								
+                        <span id="FooterPrevNameAll" FieldAlias="">שמות קודמים של ישות מדווחת: </span>
+                      
+                    
+                    <span id="FooterPrevNameD" FieldAlias="ShemYeshutKodem"></span>
+                  </td>
+                </tr>
+                <tr align="left">
+                  <td>
+                    <span id="FooterDateUpdate" FieldAlias="">תאריך עדכון מבנה הטופס: </span>
+                    <span id="FooterDateUpdateD" FieldAlias="TaarichIdkunMivne">31/12/2014</span>                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span id="FooterSignatoryName" FieldAlias="">שם מדווח אלקטרוני: </span>
+                    
+                    <span id="FooterSignatoryNameD" FieldAlias="FooterShemMedaveach">פוליקר תמיר</span>
+                    ,
+                    <span id="FooterSignatoryJob" FieldAlias="">תפקידו: </span>
+                    
+                    <span id="FooterSignatoryJobD" FieldAlias="TafkidBaTaagid">סמנכ"ל כספים וכלכלה</span>
+                    ,
+                    
+                    <span id="FooterEmployCompany" FieldAlias="">שם חברה מעסיקה: </span>
+                    
+                    <span id="FooterCompanyNameD" FieldAlias="FooterShemHevra"></span>
+                    .
+                  </td>
+                </tr>
+                <tr>
+                  <td>						
+                    <span id="FooterAddress" FieldAlias="Street">נתיב האור </span>
+                    <span id="FooterStreetNumber" FieldAlias="StreetNumber">1</span>
+                    <span id="FooterCity" FieldAlias="City">חיפה</span>
+                    <span id="FooterZipCode" FieldAlias="ZipCode">35085</span>                                        
+                    ,
+                    
+                    <span id="FooterPhone" FieldAlias="">טלפון: </span>
+                    <span id="FooterPhoneD" FieldAlias="Telephone">04-8184500</span>
+                    ,
+                    
+                    <span id="FooterFax" FieldAlias="">פקס: </span>
+                    <span id="FooterFaxD" FieldAlias="FooterFax1">04-8184924</span>
+                    ,					
+                    
+                    <span id="FooterEmail" FieldAlias="">דואר אלקטרוני: </span>
+                    <span id="FooterEmailD" FieldAlias="FooterDoarElectroniMedaveach">yadidc@iec.co.il</span>
+                    
+                    <span style="display:none">
+                      <span id="FooterYaelD" FieldAlias="FooterYael">2</span>
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            
+        
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
