@@ -1,0 +1,2245 @@
+﻿<html xmlns:msxsl="urn:schemas-microsoft-com:xslt">	
+    <title></title>
+    <head>
+
+<script type="text/javascript">
+<!--
+window["_tsbp_"] = { ba : "X-TS-BP-Action", bh : "X-TS-AJAX-Request"};
+//-->
+</script>
+<script type="text/javascript" src="/TSbd/08a2325c7eab20004374312c17fa4abfffaa7e7faab0006b68213bf2c57498d357271017d77baea5?type=2"></script>
+<script type="text/javascript" src="../../scripts/utils.js"></script>
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1255">
+    <STYLE>BODY {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: #173d65; BACKGROUND-COLOR: #feffff
+}
+.clsTable {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; BORDER-BOTTOM: #173d65 thin; COLOR: #173d65
+}
+.clsMessage {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: #173d65
+}
+.TblHeader {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: white; TEXT-ALIGN: center; BACKGROUND-COLOR: #173d65
+}
+TABLE {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+BUTTON {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: white; BACKGROUND-COLOR: #53769b
+}
+.clsSelectRowMenu {
+	CURSOR: hand; FONT-SIZE: 13px; BORDER-TOP: moccasin thin inset; BORDER-RIGHT: moccasin thin inset; BORDER-BOTTOM: moccasin thin inset; FONT-WEIGHT: bolder; COLOR: lightyellow; BORDER-LEFT: moccasin thin inset; BACKGROUND-COLOR: #4682b4
+}
+.TblDetail {
+	BACKGROUND-COLOR: antiquewhite
+}
+.clsHeader {
+	FONT-SIZE: 15px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: #173d65
+}
+.clsHeaders {
+	FONT-SIZE: 15px; TEXT-DECORATION: underline; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: #173d65
+}
+.clsTableDetails {
+	BACKGROUND-COLOR: #bdcedd
+}
+.clsBut {
+	FONT-SIZE: 13px; HEIGHT: 20px; FONT-FAMILY: Arial; WIDTH: 70px; FONT-WEIGHT: bolder; COLOR: white; BACKGROUND-COLOR: #53769b
+}
+.clsSelectedSearch {
+	FONT-WEIGHT: bolder; COLOR: #d4a302
+}
+.clsSelect {
+	FONT-SIZE: 13px; HEIGHT: 20px; WIDTH: 165px
+}
+.clsDisabledText {
+	WIDTH: 165px; BACKGROUND-COLOR: #bdcedd
+}
+.clsInputText {
+	FONT-SIZE: 13px; HEIGHT: 20px; WIDTH: 165px
+}
+.clsWinButton {
+	HEIGHT: 20px; WIDTH: 25px; FONT-WEIGHT: bolder; COLOR: white; BACKGROUND-COLOR: #53769b
+}
+.clsInputTextDate {
+	FONT-SIZE: 13px; HEIGHT: 20px; WIDTH: 77px
+}
+.clsTDTitle {
+	FONT-FAMILY: Arial; FONT-WEIGHT: bolder; BACKGROUND-COLOR: #bdcedd
+}
+.clsSmallSelect {
+	FONT-SIZE: 13px; HEIGHT: 20px; WIDTH: 100px
+}
+.clsSmallInputText {
+	FONT-SIZE: 13px; HEIGHT: 20px; WIDTH: 100px
+}
+.HeaderEntityName {
+	FONT-SIZE: 16px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: #173d65
+}
+.tblFormStatic {
+	FONT-SIZE: 13px; BORDER-TOP: #53769b thin solid; FONT-FAMILY: Arial; BORDER-RIGHT: #53769b thin solid; BORDER-BOTTOM: #53769b thin solid; BORDER-LEFT: #53769b thin solid
+}
+.TextareaDeploy {
+	BOX-SIZING: border-box; BORDER-TOP: medium none; FONT-FAMILY: Arial; BORDER-RIGHT: medium none; OVERFLOW-X: hidden; BORDER-BOTTOM: medium none; COLOR: #173d65; FONT-STYLE: italic; BORDER-LEFT: medium none; BACKGROUND-COLOR: white; resize: none
+}
+.clsTableBorder {
+	BORDER-TOP: #173d65 1px solid; BORDER-RIGHT: #173d65 1px solid; BORDER-BOTTOM: #173d65 1px solid; BORDER-LEFT: #173d65 1px solid
+}
+</STYLE>
+    <STYLE>BODY {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65; BACKGROUND-COLOR: #feffff
+}
+.clsSelectTab {
+	FONT-SIZE: 11px; BORDER-TOP: paleturquoise thin inset; FONT-FAMILY: Arial; BORDER-RIGHT: paleturquoise thin inset; BORDER-BOTTOM: paleturquoise thin inset; BORDER-LEFT: paleturquoise thin inset; BACKGROUND-COLOR: #00608b
+}
+.clsMenuTab {
+	FONT-SIZE: 11px; BORDER-TOP: paleturquoise thin; FONT-FAMILY: Arial; BORDER-RIGHT: paleturquoise thin; BORDER-BOTTOM: paleturquoise thin; COLOR: white; BORDER-LEFT: paleturquoise thin; BACKGROUND-COLOR: #00608b
+}
+.menulines {
+	FONT-SIZE: 12px; BORDER-TOP: midnightblue thin solid; FONT-FAMILY: Arial; BORDER-RIGHT: midnightblue thin solid; BORDER-BOTTOM: midnightblue thin solid; FONT-WEIGHT: bolder; COLOR: white; TEXT-ALIGN: right; BORDER-LEFT: midnightblue thin solid; BACKGROUND-COLOR: #0b4a80
+}
+.clsHeaders {
+	FONT-SIZE: 15px; TEXT-DECORATION: underline; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: #173d65
+}
+.clsButton {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: white; BACKGROUND-COLOR: #53769b
+}
+.TableFrmHeader {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: #173d65
+}
+.clsTable {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; BORDER-BOTTOM: #173d65 thin; COLOR: #173d65
+}
+.clsFrmFooter {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+.clsMessage {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: #173d65
+}
+.menutree {
+	CURSOR: hand; FONT-SIZE: 12px; FONT-FAMILY: Arial; FONT-WEIGHT: bolder; COLOR: white; BACKGROUND-COLOR: #00608b
+}
+.TblHeader {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: white; TEXT-ALIGN: center; BACKGROUND-COLOR: #173d65
+}
+TABLE {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+.clsSelectedRow {
+	CURSOR: hand; BACKGROUND-COLOR: #fffacd
+}
+.clsFirstRow {
+	CURSOR: hand; BACKGROUND-COLOR: white
+}
+BUTTON {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: white; BACKGROUND-COLOR: #53769b
+}
+.clsExplenation {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65; FONT-STYLE: italic
+}
+.SubMenu {
+	CURSOR: hand; FONT-SIZE: 12px; BORDER-TOP: medium none; FONT-FAMILY: Arial; BORDER-RIGHT: medium none; BACKGROUND-REPEAT: no-repeat; BACKGROUND-ATTACHMENT: fixed; BORDER-BOTTOM: medium none; BACKGROUND-POSITION: center bottom; FONT-WEIGHT: lighter; COLOR: #173d65; BORDER-LEFT: medium none
+}
+.clsSelectRowMenu {
+	CURSOR: hand; FONT-SIZE: 13px; BORDER-TOP: ivory thin; BORDER-RIGHT: ivory thin; BORDER-BOTTOM: ivory thin; FONT-WEIGHT: lighter; COLOR: lemonchiffon; BORDER-LEFT: ivory thin
+}
+.HeaderEntityName {
+	FONT-SIZE: 16px; FONT-FAMILY: Arial; FONT-WEIGHT: bold; COLOR: #173d65
+}
+.SubHeader {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #2f5c8a
+}
+.clsRemark {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #e34b00; FONT-STYLE: italic
+}
+INPUT {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+TEXTAREA {
+	OVERFLOW: visible; FONT-SIZE: 13px; BORDER-TOP: #173d65 1px solid; FONT-FAMILY: Arial; BORDER-RIGHT: #173d65 1px solid; WIDTH: 145px; OVERFLOW-X: hidden; BORDER-BOTTOM: #173d65 1px solid; ZOOM: 1; COLOR: #173d65; BORDER-LEFT: #173d65 1px solid; BACKGROUND-COLOR: white
+}
+OPTION {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial
+}
+.clsUnderLine {
+	FONT-SIZE: 13px; TEXT-DECORATION: underline; FONT-FAMILY: Arial; FONT-WEIGHT: bold
+}
+.clsButFix {
+	FONT-SIZE: 13px; BORDER-TOP: cornflowerblue thin ridge; FONT-FAMILY: Arial; BORDER-RIGHT: cornflowerblue thin ridge; BORDER-BOTTOM: cornflowerblue thin ridge; FONT-WEIGHT: bolder; COLOR: snow; BORDER-LEFT: cornflowerblue thin ridge; BACKGROUND-COLOR: #53769b
+}
+.clsGray {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: gray
+}
+SELECT {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+.clsHeaderListReport {
+	FONT-WEIGHT: bolder; COLOR: white; BACKGROUND-COLOR: #00608b
+}
+.DivGrd1 {
+	OVERFLOW: auto
+}
+.clsSelectGif {
+	BACKGROUND-REPEAT: no-repeat; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-POSITION: right center
+}
+.clsSelectOnLoad {
+	FONT-SIZE: 9px; FONT-FAMILY: Arial; FONT-WEIGHT: lighter; BACKGROUND-COLOR: #53769b
+}
+.clsButtonShow {
+	BORDER-TOP: #00608b; BORDER-RIGHT: #00608b; BORDER-BOTTOM: #00608b; BORDER-LEFT: #00608b; BACKGROUND-COLOR: #53769b
+}
+.clsButtonHide {
+	BORDER-TOP: #00608b; BORDER-RIGHT: #00608b; BORDER-BOTTOM: #00608b; BORDER-LEFT: #00608b; BACKGROUND-COLOR: #53769b
+}
+.ButTop {
+	FONT-SIZE: 9px; BORDER-TOP: #173d65; FONT-FAMILY: Arial; BORDER-RIGHT: #173d65; BORDER-BOTTOM: #173d65; POSITION: relative; FONT-WEIGHT: bolder; COLOR: white; FONT-STYLE: normal; CLEAR: right; BORDER-LEFT: thin; VISIBILITY: visible; BACKGROUND-COLOR: #173d65
+}
+.overMenu {
+	BORDER-TOP: ivory thin solid; FONT-FAMILY: Arial; BORDER-RIGHT: ivory thin solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-ATTACHMENT: fixed; BORDER-BOTTOM: ivory thin solid; BACKGROUND-POSITION: right top; COLOR: palegoldenrod; BORDER-LEFT: ivory thin solid
+}
+.clsSelectOnLoad2 {
+	FONT-SIZE: 9px; FONT-FAMILY: Arial; FONT-WEIGHT: lighter
+}
+.tblFormStatic {
+	FONT-SIZE: 13px; BORDER-TOP: #53769b thin solid; FONT-FAMILY: Arial; BORDER-RIGHT: #53769b thin solid; BORDER-BOTTOM: #53769b thin solid; BORDER-LEFT: #53769b thin solid
+}
+PRE {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #173d65
+}
+.clsTableBorder {
+	BORDER-TOP: #173d65 1px solid; BORDER-RIGHT: #173d65 1px solid; BORDER-BOTTOM: #173d65 1px solid; BORDER-LEFT: #173d65 1px solid
+}
+.clsMarkFields {
+	BORDER-TOP: #e34b00 1px solid; BORDER-RIGHT: #e34b00 1px solid; BORDER-BOTTOM: #e34b00 1px solid; BORDER-LEFT: #e34b00 1px solid; BACKGROUND-COLOR: #ffb895
+}
+.clsNoneMarkFields {
+	
+}
+.clsPoint {
+	BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: #bdcedd 1px dotted; BORDER-LEFT: medium none
+}
+</STYLE>
+      <link rel="STYLESHEET" href="../StyleSheet/General.css">
+      <link rel="STYLESHEET" href="../StyleSheet/General_Deploy.css">
+      
+      
+    </head>
+    <body oncontextmenu="return(false)" bgcolor="#FDFDF7">
+            
+      <table border="0" dir="rtl" align="right" style="width:100%" id="tblMain">
+        <tr>
+          <td>
+            
+	
+			<SCRIPT LANGUAGE=javascript>
+
+function OpenFile(ProofNum, FileNameObj)
+{
+	var URL = new String(document.URLUnencoded);
+	var DomainName = new String(document.domain);
+	var IndexStart = URL.indexOf("/", 7);				
+	var IndexEnd = URL.indexOf("/", IndexStart + 1);
+	var Site = URL.substring(IndexStart + 1, IndexEnd).toLowerCase();
+	var Path = "";
+	
+  if (URL.match(/^file:\/\//i) != null) 
+      Site = "file:"; 
+  
+	switch (Site)
+	{
+		case "internet": 
+			Path = "http://" + DomainName + "/Pages/GetGWFile.aspx?ProofID=" + ProofNum + "&FileName=" + encodeURIComponent(FileNameObj.innerText);		
+			break;
+			
+		case "file:":
+			Path = FileNameObj.localPath;
+			break;
+
+		default:
+			var FileName = FileNameObj.value ? FileNameObj.value.replace(/^\s+/g, "").replace(/\s+$/g, "") : "";
+			Path = (FileName.length > 0) ? ("file://" + FileName) : "";
+			break;
+	}
+	
+	if(Path != "")
+		window.open(Path);
+}
+</script>
+	
+
+<div style="display:none">
+	
+			<span id="HeaderFormSubject" FieldAlias="FormSubject">נכון לתאריך: 08/01/2015</span>
+		
+
+  
+			<span id="HeaderIsComfort" FieldAlias="IsComfort">false</span>
+		
+</div>
+
+
+
+
+<table class="clsTable" dir="rtl" align="center" style="width:100%" border="0">
+		<tr>
+			<td style="width:23%"></td>	
+			<td style="display:none">
+			<span id="EntityTypeCode" FieldAlias="KodSugYeshut">1</span>
+			</td>
+			<td class="HeaderEntityName" align="center" style="width:54%">
+			<span id="HeaderEntityNameEB" FieldAlias="ShemYeshutIvrit">נעמן גרופ (נ.ו.) בע"מ</span>
+			</td>
+			<td align="right" class="clsTable" style="width:23%">
+			<b>
+			<span id="HeaderFormNumber" FieldAlias="MisparTofes">ת097</span>
+			</b>				
+			</td>
+			
+		</tr>
+		<tr>
+			<td style="width:160px">
+				
+			</td>	
+			<td style="display:none"></td>
+			<td class="HeaderEntityName" align="center">
+			<span id="HeaderEntityNameEn" FieldAlias="ShemYeshutLoazit">NAAMAN GROUP (N.V.) LTD</span>
+			</td>
+			
+			<td align="right" class="clsTable">
+			<b>
+			<span id="HeaderPublic" FieldAlias="PumbiLoPumbi">פומבי</span>
+			</b>				
+			</td>
+			
+		</tr>
+    
+    <tr>
+      <td></td>
+      <td style="display:none"></td>
+			<td class="HeaderEntityName" align="center">
+				        
+        
+                
+			</td>
+      <td></td>
+    </tr>  
+    
+		<tr>
+			<td style="width:160px"></td>	
+			<td style="display:none">
+			<span id="HeaderEntityID" FieldAlias="MezahehHotem">10206</span>
+					
+			</td>
+				<td align="center">
+				
+					<span id="HeaderSingNumber" FieldAlias="">מספר ברשם: </span>
+					
+							
+					<span id="HeaderSingNumberD" FieldAlias="HeaderMisparBaRasham">520044389</span>
+				</td>
+				<td>				
+				</td>
+
+		</tr>
+			<tr>
+			<td></td>
+				
+			<td align="center">
+			<span id="HeaderText" FieldAlias="NeyarotErechReshumim">ניירות ערך של התאגיד רשומים למסחר בבורסה בתל-אביב</span>
+						<td></td>	
+			</td>
+			
+
+		</tr>
+		
+		<tr>
+			<td style="width:160px;"></td>	
+
+			<td style="display:none">
+			<span id="HeaderEntityIdentity" FieldAlias="MezahehYeshut">505</span>
+					
+			</td>
+											
+			<td align="center">
+			<span id="HeaderStockSing" FieldAlias="">שם מקוצר: </span>
+							
+			<span id="HeaderStockSingD" FieldAlias="HeaderSemelBursa">נעמן</span>
+						
+			</td>
+			<td>
+			</td>
+			
+
+			</tr>
+		<tr>
+			<td style="width:160px"></td>	
+
+			<td style="display:none"><span id="HeaderFormID" FieldAlias="MezahehTofes">346</span>
+			</td>
+
+			<td align="center">
+							<span id="HeaderAddress" FieldAlias="">רחוב: </span>
+							<span id="HeaderStreet" FieldAlias="HeaderRehov">הרב שלום שבזי </span>
+							
+			
+							<span id="HeaderHomeNumber" FieldAlias="HeaderMisparBait">26</span>
+							,	
+								
+							<span id="HeaderCity" FieldAlias="HeaderYeshuv">ראש העין</span>
+								
+							
+							<span id="HeaderZipCode" FieldAlias="HeaderMikud">4802126</span>
+												
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="width:160px"></td>	
+
+			<td align="center">
+							<span id="HeaderPhone" FieldAlias="HeaderPhone">טלפון: </span>
+														
+								
+							<span id="HeaderPhone1" FieldAlias="HeaderTelephone1">073-2111710</span>
+							, 
+							
+						<span id="HeaderPhone2" FieldAlias="HeaderTelephone2">073-2111763</span>
+							
+												
+						,
+							
+							<span id="HeaderFax" FieldAlias="">פקס: </span>
+						
+				
+							<span id="HeaderFaxD" FieldAlias="HeaderFax1">073-2111780</span>
+										
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="width:160px"></td>	
+
+			<td align="center">
+							<span id="HeaderEmail" FieldAlias="">דואר אלקטרוני: </span>
+						
+								
+							<span id="HeaderEmailD" FieldAlias="HeaderDoarElectroniMedaveach">naamanp@naaman-group.co.il</span>
+			</td>
+			<td class="clsTable" align="right">
+				<span id="HeaderSendDate" FieldAlias="HeaderSendDate">שודר במגנא: </span>
+				08/01/2015	
+			</td>
+			</tr>
+			<tr>
+				<td style="width:160px"></td>	
+				<td></td>	
+
+			<td>			
+										
+					</td>
+			</tr>		
+		
+		<tr>
+		<td></td>
+		<td></td>
+			<td class="clsTable" align="right" style="display:none">
+						<span id="HeaderSendTime" FieldAlias="HeaderSendTime">שעת שידור: </span>
+					
+							14:01
+							<span id="HeaderSendTimeD" FieldAlias="ShaaShidur">13:59:04 </span>
+																
+			</td>
+			
+		</tr>
+		<tr>
+			<td style="width:160px"></td>
+			<td align="center">
+				<table class="clsTable" cellspacing="0" cellpadding="0">
+					<tr>
+						<td valign="top">
+						<span id="HeaderCompanyUrl" FieldAlias="">אתר החברה: </span>
+						</td>
+						<td width="5"></td>
+						<td valign="top" dir="ltr">
+						<span id="HeaderCompanyUrlD" FieldAlias="CompanyUrl">www.naamanp.co.il</span>
+						</td>
+					</tr>
+				</table>					
+			</td>
+			<td class="clsTable" align="right">
+						<span id="HeaderProof" FieldAlias="">אסמכתא: </span>
+							
+						<span id="HeaderProofValue">2015-01-007501</span>
+			
+				</td>
+			</tr>											
+			<tr>
+			<td></td>
+			<td></td>
+
+				<td>											
+					
+
+			</td>
+			
+		</tr>
+		</table>
+		<table dir="rtl" class="TableFrmHeader" style="width:60%">
+		<tr>			
+			<td>
+							<span id="HeaderFor" FieldAlias="">לכבוד </span>
+															
+			</td>
+			<td></td>
+			
+						
+			<td style="width:10">
+							<span id="HeaderFor2" FieldAlias="">לכבוד </span>
+															
+
+			</td>
+			
+				
+			<td>
+			&nbsp</td>
+			
+			
+			
+
+			<td></td>
+
+			<td></td>			
+		</tr>
+		<tr>
+					<td><u>
+							<span id="HeaderRashot" FieldAlias="">רשות ניירות ערך </span>
+							</u>
+								
+
+			</td>
+			<td></td>
+			
+			
+			<td><u>
+							<span id="HeaderToTheStock" FieldAlias="">הבורסה לניירות ערך בת"א בע"מ </span>
+							</u>
+							
+			</td>
+			
+				
+			<td>
+			&nbsp</td>
+			
+			
+
+			<td></td>
+
+			<td>
+							
+			</td>
+		</tr>
+		<tr>
+			<td>							
+			<span id="HeaderRashotMail" FieldAlias="DoarElectroniRashut">www.isa.gov.il </span>
+								
+
+			</td>
+			<td></td>
+			
+			
+			
+
+			<td style="width:10">
+							<span id="HeaderStockEmail" FieldAlias="DoarElectroniBursa">www.tase.co.il </span>
+						
+			</td>
+			
+				
+			<td>
+			&nbsp</td>
+			
+			
+
+			<td>
+							<input type="text" id="HeaderID" value="2" style="display:none"/></td>
+			<td>
+							<input type="text" id="IsFixReport"  style="display:none"/></td>
+			
+			<td>
+							<input type="text" id="IsComplementaryReport"  style="display:none"/></td>
+				
+
+		</tr>
+		</table>
+		
+		
+
+
+		
+
+
+
+		
+
+
+								<HideDataFromEscortFile>
+
+
+
+    
+
+          </td>
+        </tr>
+        <tr>
+          <td style="Height:30"></td>
+        </tr>
+        <tr>
+          <td align="center" class="clsHeaders">
+            <span id="Field1" FieldAlias="Hanadon">דוח מיידי על מצבת נושאי משרה בכירה </span>
+          </td>
+        </tr>
+        <tr>
+          <td class="SubHeader" align="center">
+            <span id="Field2" FieldAlias="">תקנה 34(ד) לתקנות ניירות ערך (דוחות תקופתיים ומיידיים), תש"ל - 1970 </span>
+          </td>
+        </tr>
+        <tr>
+          <td class="clsRemark" align="center">
+            <span id="NewField100" FieldAlias="">לתשומת ליבכם, הגדרת נושא משרה בכירה בתקנות ניירות ערך (דו"חות תקופתיים ומיידיים), תש"ל - 1970 מכילה, בין היתר, גם דירקטור. </span>
+          </td>
+        </tr>        
+        <tr>
+          <td><br>
+            <table border="0" dir="rtl" style="width:100%" align="right">
+              <tr>
+                <td>
+                  <span id="NewField2" FieldAlias="">להלן מצבת נושאי המשרה הבכירה והדירקטורים החליפיים בתאגיד נכון לתאריך </span>
+                  
+                  
+                      <span id="NewField3" FieldAlias="Taarich">08/01/2015</span>
+                    	
+                </td>
+              </tr>              
+              <tr>
+                <td>
+                  <table border="0" dir="rtl" align="right" id="Table1" style="width:100%" XMLType="TABLE">
+                    
+                        <tr class="tblHeader" align="center">
+                          <td style="width:4%">
+                            <span id="Row0Field1000" FieldAlias="">מס' </span>
+                          </td> 
+                          <td style="width:19%">
+                            <span id="Row0Field3" FieldAlias="">שם </span>
+                          </td>
+                          <td style="width:15%">
+                            <span id="Row0Field5" FieldAlias="">סוג ומספר זיהוי </span>
+                          </td>	                          
+                          <td style="width:24%">
+                            <span id="Row0Field7" FieldAlias="">תפקיד </span>
+                          </td>
+                          <td style="width:12%">
+                            <span id="Row0Field32" FieldAlias="">תאריך מינוי/סיווג </span>
+                          </td>
+                          <td style="width:22%">
+                            <span id="Row0Field14" FieldAlias="">חבר בוועדות דירקטוריון </span>
+                          </td>
+                        </tr>                      
+                      
+                    <tr>
+                      <td colspan="7">
+                        <div border="1">
+                          
+                              <table border="1" name="tblNames1" id="tblNames1" style="width:100%">
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row0TableNumeric1" FieldAlias="TableNumeric1">1 </span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row0Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>שלמה זהר</textarea>		
+                                      </em>	<br>
+                                      <span id="Row0Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row0Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>SHLOMO ZOHAR</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row0Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row0Field9" FieldAlias="MisparZihui">050884774</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row0NewField10" FieldAlias="TafkidList">יו"ר דירקטוריון</span>
+                                        <br>
+                                        <textarea id="Row0NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>_________</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row0Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row0Field13" FieldAlias="IsFinancialExpert">כן</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row0Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row0Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row0Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row0Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row0Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row0Field15" FieldAlias="IsInspectionComitee">לא</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row0Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row0Field28" FieldAlias="IsOftheAuditCommittee">לא</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row0Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row0Field40" FieldAlias="CompensationCommittee">לא</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row0Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row0Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>לא</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row1TableNumeric1" FieldAlias="TableNumeric1">2</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row1Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>לימור גנות</textarea>		
+                                      </em>	<br>
+                                      <span id="Row1Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row1Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>LIMOR GANOT</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row1Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row1Field9" FieldAlias="MisparZihui">17075045</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row1NewField10" FieldAlias="TafkidList">דירקטור רגיל</span>
+                                        <br>
+                                        <textarea id="Row1NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>_________</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row1Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row1Field13" FieldAlias="IsFinancialExpert">כן</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row1Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row1Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row1Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row1Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row1Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row1Field15" FieldAlias="IsInspectionComitee">לא</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row1Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row1Field28" FieldAlias="IsOftheAuditCommittee">לא</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row1Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row1Field40" FieldAlias="CompensationCommittee">לא</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row1Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row1Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>לא</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row2TableNumeric1" FieldAlias="TableNumeric1">3</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row2Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>ישעיהו פרי </textarea>		
+                                      </em>	<br>
+                                      <span id="Row2Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row2Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>YESHAYAHU  PERY</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row2Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row2Field9" FieldAlias="MisparZihui">06856223</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row2NewField10" FieldAlias="TafkidList">דירקטור רגיל</span>
+                                        <br>
+                                        <textarea id="Row2NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>_________</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row2Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row2Field13" FieldAlias="IsFinancialExpert">כן</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row2Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row2Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row2Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row2Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row2Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row2Field15" FieldAlias="IsInspectionComitee">כן</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row2Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row2Field28" FieldAlias="IsOftheAuditCommittee">כן</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row2Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row2Field40" FieldAlias="CompensationCommittee">כן</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row2Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row2Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>ועדת אכיפה פנימית.</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row3TableNumeric1" FieldAlias="TableNumeric1">4</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row3Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>קים שהם ניר</textarea>		
+                                      </em>	<br>
+                                      <span id="Row3Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row3Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>KIMBERLY TARA SHOHAM NIR</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row3Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row3Field9" FieldAlias="MisparZihui">13245865</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row3NewField10" FieldAlias="TafkidList">דירקטור חיצוני</span>
+                                        <br>
+                                        <textarea id="Row3NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>_________</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row3Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row3Field13" FieldAlias="IsFinancialExpert">כן</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row3Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row3Field34" FieldAlias="AppointmentDate">17/05/2007</span>		
+                                      </em>
+                                      <span id="Row3Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row3Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row3Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row3Field15" FieldAlias="IsInspectionComitee">כן</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row3Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row3Field28" FieldAlias="IsOftheAuditCommittee">כן</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row3Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row3Field40" FieldAlias="CompensationCommittee">כן</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row3Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row3Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>ועדת אכיפה פנימית.</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row4TableNumeric1" FieldAlias="TableNumeric1">5</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row4Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>מיכל מרום בריקמן</textarea>		
+                                      </em>	<br>
+                                      <span id="Row4Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row4Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>MICHAL MAROM BRIKMAN</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row4Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row4Field9" FieldAlias="MisparZihui">024675746</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row4NewField10" FieldAlias="TafkidList">דירקטור חיצוני</span>
+                                        <br>
+                                        <textarea id="Row4NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>_________</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row4Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row4Field13" FieldAlias="IsFinancialExpert">כן</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row4Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row4Field34" FieldAlias="AppointmentDate">03/07/2012</span>		
+                                      </em>
+                                      <span id="Row4Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row4Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row4Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row4Field15" FieldAlias="IsInspectionComitee">כן</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row4Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row4Field28" FieldAlias="IsOftheAuditCommittee">כן</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row4Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row4Field40" FieldAlias="CompensationCommittee">כן</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row4Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row4Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>ועדת אכיפה פנימית.</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row5TableNumeric1" FieldAlias="TableNumeric1">6</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row5Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>ורד רז אביו</textarea>		
+                                      </em>	<br>
+                                      <span id="Row5Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row5Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>VERED RAZAVAYO</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row5Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row5Field9" FieldAlias="MisparZihui">024810103</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row5NewField10" FieldAlias="TafkidList">דירקטור בלתי תלוי</span>
+                                        <br>
+                                        <textarea id="Row5NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>_________</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row5Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row5Field13" FieldAlias="IsFinancialExpert">כן</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row5Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row5Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row5Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row5Field36" FieldAlias="ManageTypeDate">17/05/2012</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row5Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row5Field15" FieldAlias="IsInspectionComitee">כן</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row5Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row5Field28" FieldAlias="IsOftheAuditCommittee">כן</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row5Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row5Field40" FieldAlias="CompensationCommittee">לא</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row5Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row5Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>ועדת אכיפה פנימית.</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row6TableNumeric1" FieldAlias="TableNumeric1">7</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row6Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>מוטי קרן</textarea>		
+                                      </em>	<br>
+                                      <span id="Row6Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row6Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>MOTTI KEREN</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row6Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row6Field9" FieldAlias="MisparZihui">058363730</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row6NewField10" FieldAlias="TafkidList">דירקטור רגיל</span>
+                                        <br>
+                                        <textarea id="Row6NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>_________</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row6Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row6Field13" FieldAlias="IsFinancialExpert">כן</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row6Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row6Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row6Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row6Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row6Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row6Field15" FieldAlias="IsInspectionComitee">לא</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row6Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row6Field28" FieldAlias="IsOftheAuditCommittee">לא</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row6Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row6Field40" FieldAlias="CompensationCommittee">לא</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row6Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row6Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>לא</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row7TableNumeric1" FieldAlias="TableNumeric1">8</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row7Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>רביב ברוקמאייר</textarea>		
+                                      </em>	<br>
+                                      <span id="Row7Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row7Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>RAVIV BROOKMAYER</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row7Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row7Field9" FieldAlias="MisparZihui">054638481</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row7NewField10" FieldAlias="TafkidList">מנהל כללי</span>
+                                        <br>
+                                        <textarea id="Row7NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>_________</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row7Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row7Field13" FieldAlias="IsFinancialExpert">_________</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row7Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row7Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row7Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row7Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row7Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row7Field15" FieldAlias="IsInspectionComitee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row7Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row7Field28" FieldAlias="IsOftheAuditCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row7Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row7Field40" FieldAlias="CompensationCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row7Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row7Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>_________</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row8TableNumeric1" FieldAlias="TableNumeric1">9</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row8Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>*ישראל מאיו</textarea>		
+                                      </em>	<br>
+                                      <span id="Row8Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row8Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>ISRAEL MAYO</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row8Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row8Field9" FieldAlias="MisparZihui">028022465</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row8NewField10" FieldAlias="TafkidList">אחר</span>
+                                        <br>
+                                        <textarea id="Row8NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>משנה למנהל הכללי ומנהל חטיבת "נעמן"</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row8Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row8Field13" FieldAlias="IsFinancialExpert">_________</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row8Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row8Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row8Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row8Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row8Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row8Field15" FieldAlias="IsInspectionComitee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row8Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row8Field28" FieldAlias="IsOftheAuditCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row8Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row8Field40" FieldAlias="CompensationCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row8Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row8Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>_________</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row9TableNumeric1" FieldAlias="TableNumeric1">10</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row9Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>רז שורץ</textarea>		
+                                      </em>	<br>
+                                      <span id="Row9Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row9Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>RAZ SCHWARTZ</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row9Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row9Field9" FieldAlias="MisparZihui">025423195</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row9NewField10" FieldAlias="TafkidList">סמנכ"ל כספים</span>
+                                        <br>
+                                        <textarea id="Row9NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>_________</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row9Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row9Field13" FieldAlias="IsFinancialExpert">_________</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row9Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row9Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row9Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row9Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row9Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row9Field15" FieldAlias="IsInspectionComitee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row9Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row9Field28" FieldAlias="IsOftheAuditCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row9Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row9Field40" FieldAlias="CompensationCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row9Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row9Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>_________</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row10TableNumeric1" FieldAlias="TableNumeric1">11</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row10Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>אלון כרמלי</textarea>		
+                                      </em>	<br>
+                                      <span id="Row10Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row10Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>ALON CARMELI</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row10Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row10Field9" FieldAlias="MisparZihui">031175698</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row10NewField10" FieldAlias="TafkidList">אחר</span>
+                                        <br>
+                                        <textarea id="Row10NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>יועץ משפטי ומזכיר החברה</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row10Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row10Field13" FieldAlias="IsFinancialExpert">_________</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row10Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row10Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row10Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row10Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row10Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row10Field15" FieldAlias="IsInspectionComitee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row10Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row10Field28" FieldAlias="IsOftheAuditCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row10Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row10Field40" FieldAlias="CompensationCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row10Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row10Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>_________</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row11TableNumeric1" FieldAlias="TableNumeric1">12</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row11Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>דניאל שפירא </textarea>		
+                                      </em>	<br>
+                                      <span id="Row11Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row11Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>DANIEL SPIRA</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row11Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row11Field9" FieldAlias="MisparZihui">052755998</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row11NewField10" FieldAlias="TafkidList">מבקר פנימי</span>
+                                        <br>
+                                        <textarea id="Row11NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>_________</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row11Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row11Field13" FieldAlias="IsFinancialExpert">_________</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row11Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row11Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row11Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row11Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row11Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row11Field15" FieldAlias="IsInspectionComitee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row11Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row11Field28" FieldAlias="IsOftheAuditCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row11Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row11Field40" FieldAlias="CompensationCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row11Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row11Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>_________</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row12TableNumeric1" FieldAlias="TableNumeric1">13</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row12Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>אלירם רוזנפלדר</textarea>		
+                                      </em>	<br>
+                                      <span id="Row12Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row12Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>ELIRAM ROSENFELDER</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row12Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row12Field9" FieldAlias="MisparZihui">028765048</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row12NewField10" FieldAlias="TafkidList">חשב</span>
+                                        <br>
+                                        <textarea id="Row12NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>_________</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row12Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row12Field13" FieldAlias="IsFinancialExpert">_________</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row12Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row12Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row12Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row12Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row12Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row12Field15" FieldAlias="IsInspectionComitee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row12Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row12Field28" FieldAlias="IsOftheAuditCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row12Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row12Field40" FieldAlias="CompensationCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row12Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row12Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>_________</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row13TableNumeric1" FieldAlias="TableNumeric1">14</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row13Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>אוסנת רוזנברג פרצמן</textarea>		
+                                      </em>	<br>
+                                      <span id="Row13Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row13Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>OSNAT ROZENBERG PERETZMAN</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row13Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row13Field9" FieldAlias="MisparZihui">037559069</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row13NewField10" FieldAlias="TafkidList">אחר</span>
+                                        <br>
+                                        <textarea id="Row13NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>מנהלת חטיבת "ורדינון"</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row13Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row13Field13" FieldAlias="IsFinancialExpert">_________</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row13Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row13Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row13Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row13Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row13Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row13Field15" FieldAlias="IsInspectionComitee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row13Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row13Field28" FieldAlias="IsOftheAuditCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row13Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row13Field40" FieldAlias="CompensationCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row13Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row13Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>_________</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row14TableNumeric1" FieldAlias="TableNumeric1">15</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row14Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>**יואב רשף</textarea>		
+                                      </em>	<br>
+                                      <span id="Row14Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row14Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>YOAV RESHEF</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row14Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row14Field9" FieldAlias="MisparZihui">054954847</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row14NewField10" FieldAlias="TafkidList">אחר</span>
+                                        <br>
+                                        <textarea id="Row14NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>מנהל מערכות מידע</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row14Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row14Field13" FieldAlias="IsFinancialExpert">_________</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row14Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row14Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row14Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row14Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row14Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row14Field15" FieldAlias="IsInspectionComitee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row14Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row14Field28" FieldAlias="IsOftheAuditCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row14Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row14Field40" FieldAlias="CompensationCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row14Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row14Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>_________</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                                  <tr class="clsFirstRow">																										
+                                    <td style="width:4%" valign="top" class="clsHeader">
+                                      <span id="Row15TableNumeric1" FieldAlias="TableNumeric1">16</span>
+                                    </td>
+                                    <td style="width:20%" valign="top">
+                                      <em>
+                                        <textarea id="Row15Field4" FieldAlias="NoseMisra" class="TextareaDeploy" style="width:120px" readonly>***יוסף דיטל</textarea>		
+                                      </em>	<br>
+                                      <span id="Row15Field10" FieldAlias="">שם באנגלית כפי שמופיע בדרכון: </span>												
+                                      <em>
+                                        <textarea id="Row15Field11" FieldAlias="ShemAnglit" class="TextareaDeploy" style="width:120px" readonly>YOSEF DITAL</textarea>		
+                                      </em>                                      
+                                    </td>
+                                    <td style="width:16%" valign="top">
+                                      <em>
+                                        <span id="Row15Field6" FieldAlias="SugMisparZihui">מספר תעודת זהות</span>		
+                                      </em>	
+                                      <br>
+                                      <em>
+                                        <span id="Row15Field9" FieldAlias="MisparZihui">09382052</span>		
+                                      </em>	
+                                    </td>                                    
+                                    <td style="width:26%" valign="top">
+                                      <em>
+                                        <span id="Row15NewField10" FieldAlias="TafkidList">אחר</span>
+                                        <br>
+                                        <textarea id="Row15NewField1" FieldAlias="Tafkid" class="TextareaDeploy" style="width:" readonly>מנהל מערכות מידע</textarea>	
+                                         <br>
+                                      </em>	  
+                                        <span id="Row15Field12" FieldAlias="">בעל מומחיות חשבונאית פיננסית </span>	
+                                        <em><span id="Row15Field13" FieldAlias="IsFinancialExpert">_________</span></em>
+                                    </td>                                    
+                                    <td style="width:14%" valign="top">
+                                      <span id="Row15Field33" FieldAlias="">מועד המינוי </span>	
+                                      <em>
+                                        <span id="Row15Field34" FieldAlias="AppointmentDate">_________</span>		
+                                      </em>
+                                      <span id="Row15Field35" FieldAlias="">מועד סיווגו כדב"ת </span>	
+                                       <em>
+                                        <span id="Row15Field36" FieldAlias="ManageTypeDate">_________</span>		
+                                       </em>
+                                    </td>                                    
+                                    <td style="width:20%" valign="top">
+                                      <table cellspacing="1" cellpadding="1">
+                                        <tr>
+                                          <td>
+                                            <span id="Row15Field31" FieldAlias="">ועדת ביקורת: </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row15Field15" FieldAlias="IsInspectionComitee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row15Field27" FieldAlias="">ועדת מאזן : </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row15Field28" FieldAlias="IsOftheAuditCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <span id="Row15Field39" FieldAlias="">ועדת תגמול </span>
+                                          </td>
+                                          <td style="text-align:right">
+                                            <em>
+                                              <span id="Row15Field40" FieldAlias="CompensationCommittee">_________</span>
+                                            </em>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="2">
+                                            <span id="Row15Field29" FieldAlias="">ועדות נוספות: </span>
+                                          </td>                                       
+                                        </tr>
+                                        <tr>
+                                           <td colspan="2"> 
+                                             <em>
+                                               <textarea id="Row15Field30" FieldAlias="OtherCommittees" class="TextareaDeploy" style="width:" readonly>_________</textarea>                                            
+                                             </em>
+                                          </td>
+                                        </tr>
+                                      </table>             
+                                    </td>                                    
+                                  </tr>
+                                
+                              </table>
+                            
+                        </div>
+                      </td>
+                    </tr>                    
+                  </table>                  
+                </td>
+              </tr>
+                                    
+                  <tr>
+                    <td class="clsRemark">
+                      <span id="Field26" FieldAlias="">הסבר: </span>
+                      <br>
+                      <span id="Field37" FieldAlias="">1. ככול ונושא המשרה הבכירה חבר באחת או יותר מועדות הדירקטוריון, יש לפרט את שם הועדה או הועדות. </span>
+                       <br>
+                      <span id="Field38" FieldAlias="">2. ועדת מאזן הנה הועדה לבחינת הדוחות הכספיים לפי תקנות החברות (הוראות ותנאים לעניין הליך אישור הדוחות הכספיים), התש"ע – 2010. </span>
+                    </td>
+                  </tr>
+                                
+            </table>
+          </td>
+        </tr>
+        
+        
+        <tr>
+          <td style="Height:30"></td>
+        </tr>
+        <tr>
+          <td>
+            
+          </HideDataFromEscortFile>
+          
+          <link rel="STYLESHEET" href="../StyleSheet/General.css">
+          
+              <table class="clsTable" dir="rtl" align="center" style="width:100%">
+                <tr>
+                  <td class="TableFrmHeader">
+                    <em>
+                      <textarea id="TextHofshi" FieldAlias="TextHofshi" class="TextareaDeploy" style="width:695px" readonly>* סעיף 9: צפוי לסיים כהונתו ביום 07.07.2015
+** סעיף 15: צפוי לסיים כהונתו ביום 12.01.2015
+*** סעיף 16: צפוי להתחיל כהונתו ביום 13.01.2015
+
+דו"ח זה נחתם על ידי ה"ה רביב ברוקמאייר (מנכ"ל) ורז שורץ (סמנכ"ל כספים).</textarea>
+                    </em>
+                  </td>
+                </tr>                
+                <tr>
+                  <td class="clsTable">
+                    <span id="FooterFroopNumberT" FieldAlias="">מספרי אסמכתאות של מסמכים קודמים בנושא (אין האזכור מהווה הכללה על דרך הפניה): </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <font face="ariel" size="2" color="black" class="clsTable">
+                      <em><b>
+                        
+                        
+                        
+                                        
+                            <span id="FooterProofNum1" FieldAlias="FooterMisparAsmachta1" dir="ltr"> </span>
+                          
+                        
+                        &nbsp;&nbsp;&nbsp;	
+                                                
+                        
+                        
+                        
+                                        
+                            <span id="FooterProofNum2" FieldAlias="FooterMisparAsmachta2" dir="ltr"> </span>
+                          
+                        
+                        &nbsp;&nbsp;&nbsp;                        
+                        
+                        
+                        
+                        
+                                        
+                            <span id="FooterProofNum3" FieldAlias="FooterMisparAsmachta3" dir="ltr"> </span>
+                          
+                      </b></em>
+                    </font>				
+                  </td>
+                </tr>
+                <tr>
+                  <td>                    
+                    								
+                        <span id="FooterPrevNameAll" FieldAlias="">שמות קודמים של ישות מדווחת: </span>
+                      
+                    
+                    <span id="FooterPrevNameD" FieldAlias="ShemYeshutKodem">נעמן פורצלן בע"מ</span>
+                  </td>
+                </tr>
+                <tr align="left">
+                  <td>
+                    <span id="FooterDateUpdate" FieldAlias="">תאריך עדכון מבנה הטופס: </span>
+                    <span id="FooterDateUpdateD" FieldAlias="TaarichIdkunMivne">05/01/2015</span>                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span id="FooterSignatoryName" FieldAlias="">שם מדווח אלקטרוני: </span>
+                    
+                    <span id="FooterSignatoryNameD" FieldAlias="FooterShemMedaveach">כרמלי אלון </span>
+                    ,
+                    <span id="FooterSignatoryJob" FieldAlias="">תפקידו: </span>
+                    
+                    <span id="FooterSignatoryJobD" FieldAlias="TafkidBaTaagid">יועץ משפטי ראשי ומזכיר החברה</span>
+                    ,
+                    
+                    <span id="FooterEmployCompany" FieldAlias="">שם חברה מעסיקה: </span>
+                    
+                    <span id="FooterCompanyNameD" FieldAlias="FooterShemHevra"></span>
+                    .
+                  </td>
+                </tr>
+                <tr>
+                  <td>						
+                    <span id="FooterAddress" FieldAlias="Street">הרב שלום שבזי </span>
+                    <span id="FooterStreetNumber" FieldAlias="StreetNumber">26</span>
+                    <span id="FooterCity" FieldAlias="City">ראש העין </span>
+                    <span id="FooterZipCode" FieldAlias="ZipCode">48021</span>                                        
+                    ,
+                    
+                    <span id="FooterPhone" FieldAlias="">טלפון: </span>
+                    <span id="FooterPhoneD" FieldAlias="Telephone">073-2111763</span>
+                    ,
+                    
+                    <span id="FooterFax" FieldAlias="">פקס: </span>
+                    <span id="FooterFaxD" FieldAlias="FooterFax1">073-2111780</span>
+                    ,					
+                    
+                    <span id="FooterEmail" FieldAlias="">דואר אלקטרוני: </span>
+                    <span id="FooterEmailD" FieldAlias="FooterDoarElectroniMedaveach">alonc@bee-group.co.il</span>
+                    
+                    <span style="display:none">
+                      <span id="FooterYaelD" FieldAlias="FooterYael">1</span>
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            
+        
+          </td>
+        </tr>
+      </table> 
+    </body>
+  </html>
