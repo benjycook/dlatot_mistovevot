@@ -5,6 +5,7 @@ import requests
 from abc import abstractmethod
 import hashlib
 
+
 class BaseHtmlDataExtractor(object):
     DATE_FORMAT = '%d-%m-%Y'
     ID_INDICATORS = [u'\u05e1\u05d5\u05d2 \u05de\u05e1\u05e4\u05e8 \u05d6\u05d9\u05d4\u05d5\u05d9: ',\

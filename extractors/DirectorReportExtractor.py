@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from BaseHtmlDataExtractor import BaseHtmlDataExtractor
 import datetime
 
@@ -64,5 +66,6 @@ class DirectorReportExtractor(BaseHtmlDataExtractor):
             row_dict['position'] = first_position.encode('utf-8')
 
     def can_extract(self):
-        print self._get_value_form_field_id(self.TITLE_TEMPLATE).encode('utf-8')
-        return self._get_value_form_field_id(self.TITLE_TEMPLATE) == '\u05d3\u05d5\u05d7 \u05de\u05d9\u05d9\u05d3\u05d9 \u05e2\u05dc \u05de\u05e6\u05d1\u05ea \u05e0\u05d5\u05e9\u05d0\u05d9 \u05de\u05e9\u05e8\u05d4 \u05d1\u05db\u05d9\u05e8\u05d4 '
+        print (self._get_value_form_field_id(self.TITLE_TEMPLATE)) #.encode('utf-8'))
+        title = '\u05d3\u05d5\u05d7 \u05de\u05d9\u05d9\u05d3\u05d9 \u05e2\u05dc \u05de\u05e6\u05d1\u05ea \u05e0\u05d5\u05e9\u05d0\u05d9 \u05de\u05e9\u05e8\u05d4 \u05d1\u05db\u05d9\u05e8\u05d4'
+        return self._get_value_form_field_id(self.TITLE_TEMPLATE) == u'{}'.format(title)
