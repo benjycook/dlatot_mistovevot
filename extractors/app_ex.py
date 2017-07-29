@@ -27,11 +27,11 @@ def get_csv_data(argv):
     return df
 
 forms = set()
-year = '2005'
+year = '2004'
 for data in tqdm(get_csv_data(['', 'appointment', year]).iterrows()):
     url = data[1].html_link
     company_name = data[1].company_name
-    print url
+    print(url)
     if url == 'nan':
         continue
     if type(url) != str:
@@ -52,15 +52,6 @@ for data in tqdm(get_csv_data(['', 'appointment', year]).iterrows()):
         u'ת304': lambda x: tempalte_304(x),
         u'ת306': lambda x: tempalte_306(x),
         u'ת307': lambda x: tempalte_307(x)}
-
-        #
-        # 'ת097': lambda x: template_097(x),
-        # 'ת121': lambda x: template_121(x),
-        # 'ת053'  : lambda x: template_053(x),
-        # 'C002': lambda x: tempalte_C002(x),
-        # 'C004': lambda x: tempalte_C004(x),
-        # 'C304': lambda x: tempalte_C304(x),
-        # 'C307': lambda x: tempalte_C307(x)}
 
     report_type = classify_report_by_type(soup)
     if report_type not in functions.keys():
