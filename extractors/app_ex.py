@@ -6,18 +6,7 @@ import os
 import requests
 from time import sleep
 from tqdm import tqdm
-from templates2 import *
-from templates import *
-
-
-def classify_report_by_type(soup):
-    # return MisparTofes
-    try:
-        res = soup.find_all('td', {"class": "clsTable"})[0].contents[1].contents[1].contents[0]
-    except:
-        res = ''
-    # print(res)
-    return res
+from tofes_class import Tofes
 
 
 def get_csv_data(argv):
@@ -27,63 +16,28 @@ def get_csv_data(argv):
     df = pd.read_csv(filename)
     return df
 
-forms = set()
+review_again = []
+
 for year in range(2004, 2017):
     year = str(year)
     print ('\n{}'.format(year))
     for x, data in tqdm(enumerate(get_csv_data(['', 'appointment', year]).iterrows())):
-        if x > 10:
-            break
         sleep(0.5)
-        url = data[1].html_link
-        company_name = data[1].company_name
-        if url == 'nan':
+        item = data[1]
+        tofes_link = item.html_link
+        item_info = {'year': year,
+                     'action': item.action,
+                     'company_name': item.company_name,
+                     'maya_link': item.maya_link,
+                     'tofes_link': tofes_link}
+        if tofes_link == 'nan' or type(tofes_link) != str or len(tofes_link) < 10:
+            review_again.append(item_info)
             continue
-        if type(url) != str:
+
+        tofes = Tofes(item_info)
+        if not tofes.status:
+            review_again.append(item_info)
             continue
-        if len(url) < 10:
-            continue
-        res = requests.get(url)
-
-        if res.status_code != 200:
-            print(res.status_code)
-
-        page_text = res.content
-        soup = BeautifulSoup(page_text, 'html.parser')
-        # soup = BeautifulSoup(res.content.decode('utf-8', 'ignore'), 'html.parser')
-
-        functions = {
-            # u'ת090': lambda x: template_090(x),
-            # u'ת091': lambda x: template_091(x)
-            # u'ת093': lambda x: template_093(x)
-            #  u'ת304': lambda x: template_304(x) #,
-            u'ת306': lambda x: template_306(x)
-            # u'ת307': lambda x: tempalte_307(x)
-        }
-
-        report_type = classify_report_by_type(soup)
-        if report_type not in functions.keys():
-            # print(report_type)
-            continue
-        if not len(report_type): # or report_type != u'ת093':
-            continue
-        # data = functions[report_type]((soup, year))
-        try:
-            print(url)
-            data = type1((soup, year))
-            # flag = False
-            break
-        except:
-            # data = type2((soup, year))
-            print '00000'
-            break
-
-        # len_before  = forms.__len__()
-        # forms.add(report_type)
-        # if forms.__len__() != len_before:
-        #     print(report_type)
-        #     print(url)
-        # # print(soup.find_all('textarea',{'class':'TextareaDeploy'})[0].contents)
 
 
-print(set(forms))
+        tofes.parse_html
