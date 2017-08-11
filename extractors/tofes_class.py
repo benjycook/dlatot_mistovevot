@@ -16,7 +16,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-
 class Tofes(object):
     def __init__(self, link_info):
 
@@ -32,6 +31,7 @@ class Tofes(object):
         self._html = None
         self.html = None
 
+        self.valid_report_num = True
         self._report_num = None
         self.report_num = None
 
@@ -88,6 +88,8 @@ class Tofes(object):
             self._report_num = self._html.find('span', {'fieldalias': 'MisparTofes'}).contents[0]
         else:
             self._report_num = value
+        if self._report_num not in self._type1_reports + self._type2_reports:
+            self.valid_report_num = False
 
     @property
     def date_published(self):
@@ -107,7 +109,7 @@ class Tofes(object):
 
     @fullname.setter
     def fullname(self, value):
-        if self._report_num not in self._type1_reports+self._type2_reports:
+        if not self.valid_report_num:
             self._fullname = None
         elif value is None:
             for shem in ['Shem', 'ShemPratiVeMishpacha', 'ShemPriatiVeMishpacha', 'ShemMishpahaVePrati',
@@ -128,7 +130,7 @@ class Tofes(object):
     def job_title(self, value):
         if self.report_num in self._type2_reports:
             self._job_title = u'רואה חשבון'
-        elif self._report_num not in self._type1_reports:
+        elif not self.valid_report_num:
             self._job_title = None
         elif value is None:
             job_titles = ['Tafkid', 'Misra', 'HaTafkidLoMuna']
@@ -149,7 +151,7 @@ class Tofes(object):
     def job_desc(self, value):
         if self.report_num in [u'ת090', u'ת307']:
             self._job_desc = u''
-        elif self._report_num not in self._type1_reports:
+        elif not self.valid_report_num:
             self._job_desc = None
         elif value is None:
             job_descs = ['TeurTafkid', 'LeloTeur', 'TeurHaTafkidLoMuna']
@@ -164,11 +166,11 @@ class Tofes(object):
 
     @property
     def starting_date(self):
-        return self._job_desc
+        return self._starting_date
 
     @starting_date.setter
     def starting_date(self, value):
-        if self._report_num not in self._type1_reports+self._type2_reports:
+        if not self.valid_report_num:
             self._starting_date = None
         elif value is None:
             starting_dates = ['TaarichTchilatHaCehuna', 'TaarichTchilatCehuna', 'TaarichTehilatCehuna',
@@ -188,7 +190,7 @@ class Tofes(object):
 
     @education.setter
     def education(self, value):
-        if self._report_num not in self._type1_reports+self._type2_reports:
+        if not self.valid_report_num:
             self._education = []
         elif value is None:
             education = ['Toar', 'ToarAcademi']
@@ -225,11 +227,11 @@ class Tofes(object):
 
     @property
     def prior_jobs(self):
-        return self._education
+        return self._prior_jobs
 
     @prior_jobs.setter
     def prior_jobs(self, value):
-        if self._report_num not in self._type1_reports + self._type2_reports:
+        if not self.valid_report_num:
             self._prior_jobs = []
         elif value is None:
             job_titles = ['Tapkid', 'HaTafkidSheMila', 'Tafkid']
@@ -256,13 +258,39 @@ class Tofes(object):
                                 except:
                                     pass
 
-                        jobs.append((job, job_place, job_period))
+                        jobs.append(u'({}, {}, {})'.format(job, job_place, job_period))
                 except:
                     pass
             self._prior_jobs = jobs
         else:
 
             self._prior_jobs = value if type(value) is list else [value]
+
+    def print_results(self):
+        print u'report type - {0}'.format(self.report_num)
+        print u'date published - {0}'.format(self.date_published)
+        print 'action - {0}'.format(self._action_title)
+        print 'company - {0}'.format(self._company_name)
+        print u'fullname - {0}'.format(self.fullname)
+        print u'job - {0} / {1}'.format(self.job_title, self.job_desc)
+        print u'starting date - {0}'.format(self.starting_date)
+        for tup in self.education:
+            print tup[0], tup[1], tup[2]
+        for tup in self.prior_jobs:
+            print tup[0], tup[1], tup[2]
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def extras(html):
 
