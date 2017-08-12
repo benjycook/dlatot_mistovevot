@@ -27,10 +27,12 @@ def fill_review_again_sheet(sheet, row, info, failure_reason):
     sheet[d] = info.html_link
     sheet[e] = failure_reason
 
-def main():
-    wb = Workbook()
 
-    for x, year in enumerate(range(2004, 2017)):
+def main():
+
+    for x, year in enumerate(range(2004, 2018)):
+        wb = Workbook()
+        wb_ra = Workbook()
         year = str(year)
         ws = wb.create_sheet(year, x)
         ws['A1'] = u'שם מלא'
@@ -44,20 +46,20 @@ def main():
         ws['I1'] = u'תאריך פרסום'
         ws['J1'] = u'לינק רפרנס'
 
-        ws_ra = wb.create_sheet('{}-review_again year'.format(year), x+14)
+        ws_ra = wb_ra.create_sheet(year, x)
         ws_ra['A1'] = 'action'
         ws_ra['B1'] = 'company_name'
         ws_ra['C1'] = 'maya_link'
         ws_ra['D1'] = 'tofes_link'
         ws_ra['E1'] = 'failure_reason'
 
-        print ('\n{}'.format(year))
+        # print('\n{}'.format(year))
         r = 1
         ra = 1
         for i, data in tqdm(enumerate(get_csv_data(['', 'appointment', year]).iterrows())):
             sleep(0.5)
-            if i > 10:
-                break
+            # if i > 3:
+            #     break
             item = data[1]
             tofes_link = item.html_link
             item_info = {'year': year,
@@ -70,33 +72,39 @@ def main():
                 ra += 1
                 fill_review_again_sheet(ws_ra, ra, item, 'bad tofes link')
                 continue
+            try:
+                tofes = Tofes(item_info)
+                if not tofes.status:
+                    ra += 1
+                    fill_review_again_sheet(ws_ra, ra, item, 'request failed')
+                    continue
 
-            tofes = Tofes(item_info)
-            if not tofes.status:
+                if not tofes.valid_report_num:
+                    ra += 1
+                    fill_review_again_sheet(ws_ra, ra, item, u'bad tofes num - {}'.format(tofes.report_num))
+                    continue
+
+                r += 1
+                a, b, c, d, e, f, g, h, i, j = ['{}{}'.format(c, r)
+                                                for c in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']]
+                ws[a] = tofes.fullname
+                ws[b] = tofes.job_title
+                ws[c] = tofes.job_desc
+                ws[d] = tofes.starting_date
+                ws[e] = item.company_name
+                ws[f] = ','.join(tofes.prior_jobs)
+                ws[g] = item.action
+                ws[h] = tofes.report_num
+                ws[i] = tofes.date_published
+                ws[j] = tofes_link
+            except:
                 ra += 1
-                fill_review_again_sheet(ws_ra, ra, item, 'request failed')
-                continue
+                fill_review_again_sheet(ws_ra, ra, item, u'new exception')
+                print(tofes_link)
 
-            if not tofes.valid_report_num:
-                ra += 1
-                fill_review_again_sheet(ws_ra, ra, item, u'bad tofes num - {}'.format(tofes.report_num))
-                continue
+        wb.save('results/appointments_{}.xlsx'.format(year))
+        wb_ra.save('results/review_again_{}.xlsx'.format(year))
 
-            r += 1
-            a, b, c, d, e, f, g, h, i, j = ['{}{}'.format(c, r)
-                                            for c in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']]
-            ws[a] = tofes.fullname
-            ws[b] = tofes.job_title
-            ws[c] = tofes.job_desc
-            ws[d] = tofes.starting_date
-            ws[e] = item.company_name
-            ws[f] = ','.join(tofes.prior_jobs)
-            ws[g] = item.action
-            ws[h] = tofes.report_num
-            ws[i] = tofes.date_published
-            ws[j] = tofes_link
-
-    wb.save('test.xlsx')
 
 if __name__ == '__main__':
     main()
