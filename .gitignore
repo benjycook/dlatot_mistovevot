@@ -102,3 +102,5 @@ ENV/
 
 # ignore pycharm files
 .idea/
+/data/datapackage/
+!/data/datapackage/
